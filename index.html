@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Best Foods — La Qualité au Bon Prix | Épices et Produits Alimentaires, Dakar</title>
-<meta name="description" content="Best Foods, import-export d'épices et produits alimentaires à Dakar : tamarin, poivre noir, piment rouge, café, dattes, gingembre. La Qualité au Bon Prix.">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<title>Best Foods — La Qualité au Bon Prix | Épices et Produits du Monde Entier, Dakar</title>
+<meta name="description" content="Best Foods, import-export d'épices et produits alimentaires à Dakar : tamarin, poivre noir, piment rouge, café Kenya, dattes, gingembre. Gros et détail, livraison Dakar.">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.47.0/tabler-icons.min.css">
 <style>
 :root{
@@ -18,303 +18,269 @@
   --vert-clair:#2E7D32;
   --orange:#E8821A;
   --orange-clair:#F5A623;
+  --fond:#F4F4F2;
   --creme:#FBF7EF;
-  --creme-fonce:#F3EBDC;
   --brun:#3E2A18;
   --blanc:#FFFFFF;
   --gris:#6B6257;
-  --radius:18px;
-  --ombre:0 10px 30px rgba(27,94,32,.10);
+  --bordure:#E5E2DA;
+  --radius:14px;
+  --ombre:0 6px 22px rgba(27,94,32,.10);
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--creme);color:var(--brun);line-height:1.6}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--fond);color:var(--brun);line-height:1.55}
 img{max-width:100%;display:block}
 a{text-decoration:none;color:inherit}
-h1,h2,h3,.display{font-family:'Fraunces',serif}
-.container{max-width:1240px;margin:0 auto;padding:0 22px}
-.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--orange);margin-bottom:14px}
-.eyebrow i{font-size:1rem}
-section{padding:80px 0}
+h1,h2,h3{font-family:'Fraunces',serif}
+.container{max-width:1380px;margin:0 auto;padding:0 20px}
+button{font-family:inherit}
 
-/* ===== TOPBAR ===== */
-.topbar{background:var(--vert-fonce);color:#DCEBDD;font-size:.8rem;padding:7px 0}
-.topbar .container{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
-.topbar span{display:inline-flex;align-items:center;gap:6px}
-.topbar i{color:var(--orange-clair)}
-
-/* ===== HEADER ===== */
-header{position:sticky;top:0;z-index:90;background:rgba(251,247,239,.92);backdrop-filter:blur(10px);border-bottom:1px solid #E8DFCE}
-.nav{display:flex;align-items:center;justify-content:space-between;height:76px}
-.brand{display:flex;align-items:center;gap:12px}
-.brand img{height:54px;width:54px;object-fit:contain}
-.brand-name{font-family:'Fraunces',serif;font-weight:900;font-size:1.25rem;color:var(--vert);line-height:1.05}
-.brand-name small{display:block;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--orange)}
-nav.menu{display:flex;gap:28px;font-weight:600;font-size:.92rem}
-nav.menu a{position:relative;padding:6px 0;color:var(--brun)}
-nav.menu a:hover{color:var(--vert)}
-nav.menu a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--orange);transition:width .25s}
-nav.menu a:hover::after{width:100%}
-.nav-actions{display:flex;align-items:center;gap:12px}
-.btn-cart{position:relative;display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:50%;background:var(--vert);color:#fff;border:none;cursor:pointer;font-size:1.25rem;transition:transform .2s}
+/* ===== HEADER BOUTIQUE ===== */
+header{position:sticky;top:0;z-index:90;background:var(--vert-fonce);box-shadow:0 2px 14px rgba(0,0,0,.18)}
+.nav{display:flex;align-items:center;gap:18px;height:72px}
+.brand{display:flex;align-items:center;gap:11px;background:#fff;border-radius:10px;padding:6px 14px 6px 8px;flex-shrink:0}
+.brand img{height:46px;width:46px;object-fit:contain}
+.brand-name{font-family:'Fraunces',serif;font-weight:900;font-size:1.02rem;color:var(--vert);line-height:1.05;white-space:nowrap}
+.brand-name small{display:block;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:.56rem;letter-spacing:.16em;text-transform:uppercase;color:var(--orange)}
+.recherche{flex:1;display:flex;max-width:640px}
+.recherche input{flex:1;border:none;padding:12px 18px;border-radius:10px 0 0 10px;font-size:.92rem;color:var(--brun);outline:none}
+.recherche button{background:var(--orange);border:none;color:#fff;padding:0 20px;border-radius:0 10px 10px 0;font-size:1.15rem;cursor:pointer;transition:background .2s}
+.recherche button:hover{background:#C96E0F}
+.nav-droite{display:flex;align-items:center;gap:12px;margin-left:auto;flex-shrink:0}
+.chip-wa{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);color:#fff;font-weight:700;font-size:.86rem;padding:9px 16px;border-radius:999px;transition:background .2s}
+.chip-wa:hover{background:rgba(255,255,255,.22)}
+.chip-wa i{color:#5BE584;font-size:1.1rem}
+.btn-cart{position:relative;display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:50%;background:var(--orange);color:#fff;border:none;cursor:pointer;font-size:1.3rem;transition:transform .2s}
 .btn-cart:hover{transform:scale(1.07)}
-.cart-count{position:absolute;top:-4px;right:-4px;background:var(--orange);color:#fff;font-size:.68rem;font-weight:800;min-width:20px;height:20px;border-radius:10px;display:flex;align-items:center;justify-content:center;padding:0 5px}
-.burger{display:none;background:none;border:none;font-size:1.6rem;color:var(--vert);cursor:pointer}
+.cart-count{position:absolute;top:-4px;right:-4px;background:#fff;color:var(--vert-fonce);font-size:.68rem;font-weight:800;min-width:20px;height:20px;border-radius:10px;display:flex;align-items:center;justify-content:center;padding:0 5px;border:2px solid var(--orange)}
 
-/* ===== HERO ===== */
-.hero{position:relative;padding:64px 0 70px;background:var(--vert-fonce);overflow:hidden}
+/* ===== HERO BANDEAU VIDEO ===== */
+.hero{position:relative;background:var(--vert-fonce);overflow:hidden;color:#fff}
 .hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
 .hero::before{content:"";position:absolute;inset:0;z-index:1;background:
-  radial-gradient(620px 340px at 22% 30%, rgba(245,166,35,.22), transparent 70%),
-  linear-gradient(105deg, rgba(14,63,19,.90) 0%, rgba(14,63,19,.72) 48%, rgba(14,63,19,.45) 100%)}
-.hero .container{position:relative;z-index:2}
-.hero .eyebrow{color:var(--orange-clair);text-shadow:0 1px 10px rgba(0,0,0,.55)}
-.hero-figure img{border-color:rgba(255,255,255,.85)}
-.hero .container{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center}
-.hero h1{font-size:clamp(2.3rem,4.6vw,3.7rem);font-weight:900;line-height:1.07;color:#FFFDF6;text-shadow:0 2px 22px rgba(0,0,0,.55), 0 0 46px rgba(245,166,35,.30)}
-.hero h1 em{font-style:italic;color:var(--orange-clair);text-shadow:0 2px 18px rgba(0,0,0,.5), 0 0 34px rgba(245,166,35,.55)}
-.hero p.lead{margin:20px 0 30px;font-size:1.06rem;color:#EAF2E6;max-width:52ch;text-shadow:0 1px 12px rgba(0,0,0,.45)}
-.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;gap:9px;padding:14px 26px;border-radius:999px;font-weight:700;font-size:.95rem;border:none;cursor:pointer;transition:all .22s}
-.btn-vert{background:var(--vert);color:#fff}
-.btn-vert:hover{background:var(--vert-fonce);transform:translateY(-2px)}
-.btn-ligne{background:transparent;color:#fff;border:2px solid #fff;text-shadow:0 1px 8px rgba(0,0,0,.4)}
-.btn-ligne:hover{background:#fff;color:var(--vert-fonce);text-shadow:none}
-.hero-figure{position:relative}
-.hero-figure img{border-radius:26px;box-shadow:0 26px 60px rgba(27,94,32,.22);border:6px solid #fff}
-.hero-stamp{position:absolute;bottom:-22px;left:-22px;background:#fff;border-radius:16px;box-shadow:var(--ombre);padding:14px 18px;display:flex;align-items:center;gap:12px}
-.hero-stamp img{height:52px;width:52px;border:none;box-shadow:none;border-radius:0}
-.hero-stamp strong{display:block;color:var(--vert);font-size:.95rem;line-height:1.2}
-.hero-stamp small{color:var(--gris);font-size:.74rem}
-.hero-points{margin-top:34px;display:flex;gap:26px;flex-wrap:wrap}
-.hero-points span{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:.86rem;color:#F6F2E5;text-shadow:0 1px 10px rgba(0,0,0,.5)}
-.hero-points i{color:var(--orange);font-size:1.15rem}
+  radial-gradient(560px 300px at 18% 40%, rgba(245,166,35,.24), transparent 70%),
+  linear-gradient(100deg, rgba(14,63,19,.92) 0%, rgba(14,63,19,.74) 50%, rgba(14,63,19,.42) 100%)}
+.hero .container{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:42px;padding-bottom:46px;flex-wrap:wrap}
+.hero h1{font-size:clamp(1.7rem,3.6vw,2.7rem);font-weight:900;line-height:1.12;color:#FFFDF6;text-shadow:0 2px 20px rgba(0,0,0,.55), 0 0 42px rgba(245,166,35,.28)}
+.hero h1 em{font-style:italic;color:var(--orange-clair);display:block;text-shadow:0 2px 16px rgba(0,0,0,.5), 0 0 32px rgba(245,166,35,.55)}
+.hero p{margin-top:10px;font-size:.92rem;color:#E9F2E6;text-shadow:0 1px 10px rgba(0,0,0,.5);display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.hero p i{color:var(--orange-clair)}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:13px 24px;border-radius:999px;font-weight:700;font-size:.92rem;border:none;cursor:pointer;transition:all .22s}
+.btn-blanc{background:#fff;color:var(--vert-fonce)}
+.btn-blanc:hover{background:var(--orange-clair);color:#fff;transform:translateY(-2px)}
 
 /* ===== MARQUEE ===== */
-.marquee{background:var(--vert);color:#EAF4EA;overflow:hidden;padding:13px 0;border-top:3px solid var(--orange);border-bottom:3px solid var(--orange)}
-.marquee-track{display:flex;gap:46px;white-space:nowrap;animation:defile 28s linear infinite;font-weight:700;font-size:.88rem;letter-spacing:.06em;text-transform:uppercase}
-.marquee-track span{display:inline-flex;align-items:center;gap:10px}
+.marquee{background:var(--vert);color:#EAF4EA;overflow:hidden;padding:10px 0;border-bottom:3px solid var(--orange)}
+.marquee-track{display:flex;gap:44px;white-space:nowrap;animation:defile 28s linear infinite;font-weight:700;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase}
+.marquee-track span{display:inline-flex;align-items:center;gap:9px}
 .marquee-track i{color:var(--orange-clair)}
 @keyframes defile{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media (prefers-reduced-motion: reduce){.marquee-track{animation:none}}
 
-/* ===== PORTFOLIO ===== */
-.portfolio{background:var(--blanc)}
-.section-head{max-width:680px;margin-bottom:48px}
-.section-head h2{font-size:clamp(1.8rem,3.4vw,2.6rem);font-weight:900;color:var(--vert-fonce);line-height:1.15}
-.section-head p{margin-top:14px;color:var(--gris)}
-.piliers{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
-.pilier{background:var(--creme);border:1px solid #EADFC9;border-radius:var(--radius);padding:32px 28px;transition:transform .22s,box-shadow .22s}
-.pilier:hover{transform:translateY(-6px);box-shadow:var(--ombre)}
-.pilier .ico{width:58px;height:58px;border-radius:16px;background:var(--vert);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.7rem;margin-bottom:20px}
-.pilier:nth-child(2) .ico{background:var(--orange)}
-.pilier h3{font-size:1.22rem;font-weight:700;color:var(--vert-fonce);margin-bottom:10px}
-.pilier p{font-size:.92rem;color:var(--gris)}
-.chiffres{margin-top:54px;display:grid;grid-template-columns:repeat(4,1fr);gap:18px;background:var(--vert-fonce);border-radius:22px;padding:38px 30px}
-.chiffre{text-align:center;color:#fff}
-.chiffre strong{font-family:'Fraunces',serif;font-size:2.2rem;font-weight:900;color:var(--orange-clair);display:block}
-.chiffre small{font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:#BFD9C1}
+/* ===== LAYOUT BOUTIQUE ===== */
+.boutique{padding:36px 0 70px}
+.boutique-grid{display:grid;grid-template-columns:260px 1fr;gap:26px;align-items:start}
 
-/* ===== PRODUITS ===== */
-#produits{position:relative;background:var(--creme)}
-#produits::before{content:"";position:absolute;inset:0;background:url('fond-produits.jpg') center/520px repeat;opacity:.10;pointer-events:none}
-#produits .container{position:relative;z-index:1}
-.prod-grid{display:flex;flex-direction:column;gap:30px}
-.prod-card{background:#fff;border:1px solid #EADFC9;border-radius:24px;overflow:hidden;display:grid;grid-template-columns:1fr 1fr 1.15fr;box-shadow:0 4px 18px rgba(62,42,24,.05);transition:box-shadow .25s}
-.prod-card:hover{box-shadow:0 18px 44px rgba(27,94,32,.14)}
-.prod-visuel{position:relative;min-height:300px}
-.prod-visuel img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
-.prod-tag{position:absolute;top:14px;left:14px;background:rgba(14,63,19,.88);color:#fff;font-size:.68rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:999px;display:inline-flex;align-items:center;gap:6px;backdrop-filter:blur(4px)}
-.prod-tag.orange{background:rgba(232,130,26,.92)}
-.prod-sac{position:relative;border-left:1px dashed #E0D5BE;border-right:1px dashed #E0D5BE;background:var(--creme-fonce)}
-.sac-placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:24px;text-align:center}
-.sac-placeholder img{width:84px;height:84px;object-fit:contain;position:static;opacity:.9}
-.sac-placeholder p{font-size:.82rem;font-weight:600;color:var(--gris);max-width:22ch}
-.prod-infos{padding:30px 30px 22px;display:flex;flex-direction:column}
-.prod-infos h3{font-size:1.5rem;font-weight:900;color:var(--vert-fonce)}
-.prod-origine{display:inline-flex;align-items:center;gap:7px;color:var(--orange);font-weight:700;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;margin:6px 0 12px}
-.prod-desc{font-size:.9rem;color:var(--gris);margin-bottom:16px;flex-grow:1}
-.prod-conditionnement{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
-.prod-conditionnement span{background:var(--creme);border:1px solid #E5D9C0;border-radius:999px;font-size:.74rem;font-weight:700;padding:5px 12px;color:var(--brun);display:inline-flex;align-items:center;gap:6px}
-.prod-conditionnement i{color:var(--vert-clair)}
-.prod-prix{font-family:'Fraunces',serif;font-weight:900;font-size:1.15rem;color:var(--vert);margin-bottom:14px;display:flex;align-items:center;gap:8px}
-.prod-prix i{color:var(--orange)}
-.prod-achat{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-.qty{display:inline-flex;align-items:center;border:2px solid var(--vert);border-radius:999px;overflow:hidden}
-.qty button{background:none;border:none;width:36px;height:42px;font-size:1.05rem;color:var(--vert);cursor:pointer;display:flex;align-items:center;justify-content:center}
-.qty button:hover{background:var(--creme)}
-.qty input{width:44px;border:none;text-align:center;font-weight:800;font-size:.95rem;color:var(--brun);background:transparent}
-.qty input:focus{outline:none}
-.btn-panier{flex:1;min-width:170px;justify-content:center;background:var(--orange);color:#fff;padding:13px 20px}
-.btn-panier:hover{background:#C96E0F;transform:translateY(-2px)}
-.prod-paiement{margin-top:16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-size:.74rem;color:var(--gris);font-weight:600}
-.prod-paiement .pay{display:inline-flex;align-items:center;gap:5px;background:var(--creme);border:1px solid #E5D9C0;border-radius:8px;padding:4px 10px;color:var(--brun)}
-.pay.wave i{color:#1DC8FF}
-.pay.om i{color:#FF7900}
-.pay.wa i{color:#25D366}
-.prod-badge{margin-top:18px;padding-top:16px;border-top:1px solid #F0E8D6;display:flex;align-items:center;gap:10px}
-.prod-badge img{height:44px;width:44px;object-fit:contain}
-.prod-badge small{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--vert)}
+/* Sidebar */
+.sidebar{position:sticky;top:92px;background:#fff;border:1px solid var(--bordure);border-radius:var(--radius);overflow:hidden;box-shadow:var(--ombre)}
+.sidebar-titre{background:var(--vert);color:#fff;font-weight:800;font-size:.92rem;padding:15px 18px;display:flex;align-items:center;gap:10px}
+.sidebar a.cat{display:flex;align-items:center;gap:11px;padding:13px 18px;font-weight:600;font-size:.9rem;color:var(--brun);border-bottom:1px solid #F2F0EA;cursor:pointer;transition:background .15s}
+.sidebar a.cat:last-child{border-bottom:none}
+.sidebar a.cat:hover{background:var(--creme)}
+.sidebar a.cat.actif{background:var(--creme);border-left:4px solid var(--vert);padding-left:14px;color:var(--vert-fonce)}
+.sidebar a.cat i{color:var(--vert-clair);font-size:1.15rem}
+.sidebar a.cat .compte{margin-left:auto;background:var(--fond);border:1px solid var(--bordure);color:var(--gris);font-size:.7rem;font-weight:800;min-width:24px;height:22px;border-radius:11px;display:flex;align-items:center;justify-content:center;padding:0 7px}
+
+/* Zone produits */
+.zone-head{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:16px}
+.zone-head h2{font-size:1.5rem;font-weight:900;color:var(--vert-fonce)}
+.zone-head h2 em{font-style:normal;color:var(--orange)}
+.zone-head .total{font-size:.84rem;color:var(--gris);font-weight:600}
+.chips{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:22px}
+.chips button{background:#fff;border:1px solid var(--bordure);border-radius:999px;padding:8px 17px;font-weight:700;font-size:.82rem;color:var(--brun);cursor:pointer;transition:all .18s}
+.chips button:hover{border-color:var(--vert)}
+.chips button.actif{background:var(--vert);border-color:var(--vert);color:#fff}
+
+/* Watermark derrière la grille */
+.zone-produits{position:relative}
+.zone-produits::before{content:"";position:absolute;inset:-10px;background:url('images/fond-produits.jpg') center/480px repeat;opacity:.07;pointer-events:none;border-radius:18px}
+.grille{position:relative;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:18px}
+
+/* Carte produit */
+.carte{background:#fff;border:1px solid var(--bordure);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+.carte:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(27,94,32,.15)}
+.carte-img{position:relative;aspect-ratio:1/1;overflow:hidden;background:var(--creme)}
+.carte-img img.visu{width:100%;height:100%;object-fit:cover;transition:opacity .25s}
+.carte-img img.visu.sac-affiche{object-fit:contain;background:#fff}
+.badge-cat{position:absolute;top:10px;left:10px;background:var(--vert-fonce);color:#fff;font-size:.6rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:5px 11px;border-radius:999px;z-index:2}
+.badge-logo{position:absolute;bottom:10px;right:10px;width:52px;height:52px;background:#fff;border-radius:50%;padding:5px;box-shadow:0 3px 12px rgba(0,0,0,.18);z-index:2}
+.badge-logo img{width:100%;height:100%;object-fit:contain}
+.btn-sac{position:absolute;bottom:10px;left:10px;background:rgba(255,255,255,.95);border:1px solid var(--bordure);border-radius:999px;font-size:.68rem;font-weight:800;color:var(--vert-fonce);padding:6px 12px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;z-index:2;transition:all .18s}
+.btn-sac:hover{background:var(--vert);color:#fff}
+.btn-sac i{font-size:.9rem}
+.carte-corps{padding:14px 15px 16px;display:flex;flex-direction:column;flex:1}
+.carte-cat{font-size:.64rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--vert-clair);margin-bottom:3px}
+.carte-corps h3{font-family:'Plus Jakarta Sans',sans-serif;font-size:1rem;font-weight:800;color:var(--brun);margin-bottom:4px}
+.carte-origine{display:inline-flex;align-items:center;gap:6px;font-size:.74rem;color:var(--gris);margin-bottom:10px}
+.carte-origine i{color:var(--vert-clair);font-size:.92rem}
+.carte-prix{margin-top:auto;margin-bottom:11px;display:flex;align-items:baseline;gap:7px}
+.carte-prix strong{font-family:'Fraunces',serif;font-size:1.18rem;font-weight:900;color:var(--orange)}
+.carte-prix small{font-size:.7rem;color:var(--gris);font-weight:600}
+.carte-prix .demande{font-family:'Fraunces',serif;font-size:.98rem;font-weight:700;color:var(--vert)}
+.btn-ajouter{width:100%;justify-content:center;background:var(--vert);color:#fff;padding:11px 14px;border-radius:10px;font-size:.88rem}
+.btn-ajouter:hover{background:var(--vert-fonce)}
+.vide{padding:60px 20px;text-align:center;color:var(--gris);background:#fff;border:1px dashed var(--bordure);border-radius:var(--radius)}
+.vide i{font-size:2.6rem;color:#D9CDB4;display:block;margin-bottom:12px}
+
+/* ===== PORTFOLIO STRIP ===== */
+.atouts{background:#fff;border-top:1px solid var(--bordure);border-bottom:1px solid var(--bordure);padding:42px 0}
+.atouts .container{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.atout{display:flex;gap:14px;align-items:flex-start}
+.atout .ico{width:48px;height:48px;border-radius:13px;background:var(--vert);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0}
+.atout:nth-child(2) .ico,.atout:nth-child(4) .ico{background:var(--orange)}
+.atout strong{display:block;font-size:.95rem;color:var(--vert-fonce);margin-bottom:3px}
+.atout p{font-size:.8rem;color:var(--gris)}
 
 /* ===== EXPORT ===== */
-.export{background:var(--vert-fonce);color:#E8F2E8}
-.export .container{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center}
-.export h2{font-size:clamp(1.7rem,3.2vw,2.4rem);font-weight:900;color:#fff;line-height:1.18;margin-bottom:18px}
+.export{background:var(--vert-fonce);color:#E8F2E8;padding:64px 0}
+.export .container{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.export h2{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:900;color:#fff;line-height:1.18;margin-bottom:16px}
 .export h2 em{color:var(--orange-clair);font-style:italic}
-.export p{color:#BFD9C1;font-size:.95rem;margin-bottom:24px}
-.export-liste{display:flex;flex-direction:column;gap:14px}
-.export-liste li{list-style:none;display:flex;gap:12px;align-items:flex-start;font-size:.92rem}
-.export-liste i{color:var(--orange-clair);font-size:1.2rem;margin-top:2px}
-.export-img img{border-radius:22px;border:5px solid rgba(255,255,255,.12)}
+.export p{color:#BFD9C1;font-size:.92rem;margin-bottom:20px}
+.export-liste{display:flex;flex-direction:column;gap:12px}
+.export-liste li{list-style:none;display:flex;gap:11px;align-items:flex-start;font-size:.9rem}
+.export-liste i{color:var(--orange-clair);font-size:1.15rem;margin-top:2px}
+.export-img img{border-radius:20px;border:5px solid rgba(255,255,255,.12)}
 
-/* ===== CONTACT ===== */
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
-.contact-card{background:#fff;border:1px solid #EADFC9;border-radius:var(--radius);padding:34px 30px}
-.contact-card h3{font-size:1.25rem;font-weight:800;color:var(--vert-fonce);margin-bottom:18px;display:flex;align-items:center;gap:10px}
+/* ===== CONTACT + MAP ===== */
+.contact{padding:64px 0}
+.contact h2{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:900;color:var(--vert-fonce);margin-bottom:26px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.contact-card{background:#fff;border:1px solid var(--bordure);border-radius:var(--radius);padding:30px 28px}
+.contact-card h3{font-size:1.15rem;font-weight:800;color:var(--vert-fonce);margin-bottom:16px;display:flex;align-items:center;gap:10px}
 .contact-card h3 i{color:var(--orange)}
-.contact-ligne{display:flex;gap:12px;align-items:flex-start;margin-bottom:14px;font-size:.92rem;color:var(--gris)}
-.contact-ligne i{color:var(--vert-clair);font-size:1.15rem;margin-top:2px}
+.contact-ligne{display:flex;gap:11px;align-items:flex-start;margin-bottom:12px;font-size:.9rem;color:var(--gris)}
+.contact-ligne i{color:var(--vert-clair);font-size:1.1rem;margin-top:2px}
 .contact-ligne strong{color:var(--brun)}
-
-/* ===== MAP ===== */
-.map-card{margin-top:26px;background:#fff;border:1px solid #EADFC9;border-radius:var(--radius);overflow:hidden;box-shadow:var(--ombre)}
-.map-card .map-head{padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
-.map-card .map-head h3{font-size:1.1rem;font-weight:800;color:var(--vert-fonce);display:flex;align-items:center;gap:9px}
+.map-card{margin-top:22px;background:#fff;border:1px solid var(--bordure);border-radius:var(--radius);overflow:hidden;box-shadow:var(--ombre)}
+.map-card .map-head{padding:16px 22px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.map-card .map-head h3{font-size:1.05rem;font-weight:800;color:var(--vert-fonce);display:flex;align-items:center;gap:9px}
 .map-card .map-head h3 i{color:var(--orange)}
-.btn-itineraire{display:inline-flex;align-items:center;gap:8px;background:var(--vert);color:#fff;font-weight:700;font-size:.84rem;padding:10px 18px;border-radius:999px;transition:background .2s}
+.btn-itineraire{display:inline-flex;align-items:center;gap:8px;background:var(--vert);color:#fff;font-weight:700;font-size:.82rem;padding:9px 17px;border-radius:999px;transition:background .2s}
 .btn-itineraire:hover{background:var(--vert-fonce)}
-.map-card iframe{width:100%;height:380px;border:0;display:block}
+.map-card iframe{width:100%;height:360px;border:0;display:block}
 
-/* ===== FOOTER ===== */
-footer{position:relative;background:var(--vert-fonce);color:#BFD9C1;padding:48px 0 26px;overflow:hidden}
+/* ===== FOOTER VIDEO ===== */
+footer{position:relative;background:var(--vert-fonce);color:#BFD9C1;padding:46px 0 24px;overflow:hidden}
 .footer-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
 footer::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,63,19,.86),rgba(14,63,19,.93));z-index:1}
 footer .container{position:relative;z-index:2}
-.foot{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:38px;margin-bottom:34px}
-.foot img{height:64px;width:64px;object-fit:contain;margin-bottom:14px}
-.foot h4{color:#fff;font-size:.95rem;margin-bottom:14px;letter-spacing:.06em;text-transform:uppercase}
-.foot a{display:block;font-size:.88rem;margin-bottom:9px;color:#BFD9C1}
+.foot{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:36px;margin-bottom:30px}
+.foot img{height:62px;width:62px;object-fit:contain;margin-bottom:13px}
+.foot h4{color:#fff;font-size:.92rem;margin-bottom:13px;letter-spacing:.06em;text-transform:uppercase}
+.foot a{display:block;font-size:.86rem;margin-bottom:8px;color:#BFD9C1}
 .foot a:hover{color:var(--orange-clair)}
-.foot p{font-size:.86rem}
-.copyright{border-top:1px solid rgba(255,255,255,.12);padding-top:20px;text-align:center;font-size:.78rem}
+.foot p{font-size:.84rem}
+.copyright{border-top:1px solid rgba(255,255,255,.14);padding-top:18px;text-align:center;font-size:.76rem}
 
 /* ===== PANIER DRAWER ===== */
 .drawer-overlay{position:fixed;inset:0;background:rgba(20,30,20,.5);z-index:120;opacity:0;pointer-events:none;transition:opacity .3s}
 .drawer-overlay.open{opacity:1;pointer-events:auto}
 .drawer{position:fixed;top:0;right:-420px;width:min(420px,94vw);height:100%;background:#fff;z-index:130;display:flex;flex-direction:column;transition:right .35s cubic-bezier(.2,.8,.3,1);box-shadow:-14px 0 40px rgba(0,0,0,.18)}
 .drawer.open{right:0}
-.drawer-head{padding:20px 24px;border-bottom:1px solid #EFE7D5;display:flex;justify-content:space-between;align-items:center;background:var(--creme)}
-.drawer-head h3{font-size:1.15rem;font-weight:900;color:var(--vert-fonce);display:flex;align-items:center;gap:10px}
-.drawer-head button{background:none;border:none;font-size:1.4rem;color:var(--gris);cursor:pointer}
-.drawer-body{flex:1;overflow-y:auto;padding:18px 24px}
-.panier-vide{text-align:center;padding:60px 10px;color:var(--gris)}
-.panier-vide i{font-size:3rem;color:#D9CDB4;display:block;margin-bottom:14px}
-.ligne-panier{display:flex;gap:13px;align-items:center;padding:13px 0;border-bottom:1px solid #F2ECDD}
-.ligne-panier img{width:62px;height:62px;border-radius:12px;object-fit:cover}
+.drawer-head{padding:18px 22px;border-bottom:1px solid var(--bordure);display:flex;justify-content:space-between;align-items:center;background:var(--creme)}
+.drawer-head h3{font-size:1.1rem;font-weight:900;color:var(--vert-fonce);display:flex;align-items:center;gap:10px}
+.drawer-head button{background:none;border:none;font-size:1.35rem;color:var(--gris);cursor:pointer}
+.drawer-body{flex:1;overflow-y:auto;padding:16px 22px}
+.panier-vide{text-align:center;padding:56px 10px;color:var(--gris)}
+.panier-vide i{font-size:3rem;color:#D9CDB4;display:block;margin-bottom:13px}
+.ligne-panier{display:flex;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid #F2ECDD}
+.ligne-panier img{width:58px;height:58px;border-radius:11px;object-fit:cover}
 .ligne-panier .det{flex:1}
-.ligne-panier .det strong{display:block;font-size:.9rem;color:var(--brun)}
-.ligne-panier .det small{color:var(--gris);font-size:.78rem}
-.ligne-panier .sup{background:none;border:none;color:#C0392B;cursor:pointer;font-size:1.1rem}
-.drawer-foot{padding:20px 24px;border-top:1px solid #EFE7D5;background:var(--creme)}
-.drawer-foot .note{font-size:.78rem;color:var(--gris);margin-bottom:14px;display:flex;gap:8px;align-items:flex-start}
+.ligne-panier .det strong{display:block;font-size:.88rem;color:var(--brun)}
+.ligne-panier .det small{color:var(--gris);font-size:.76rem}
+.ligne-panier .prix-ligne{font-weight:800;color:var(--orange);font-size:.84rem;white-space:nowrap}
+.ligne-panier .sup{background:none;border:none;color:#C0392B;cursor:pointer;font-size:1.05rem}
+.qte-mini{display:inline-flex;align-items:center;gap:8px;margin-top:4px}
+.qte-mini button{width:24px;height:24px;border-radius:50%;border:1px solid var(--bordure);background:#fff;color:var(--vert);cursor:pointer;font-size:.8rem;display:inline-flex;align-items:center;justify-content:center}
+.qte-mini span{font-weight:800;font-size:.84rem;min-width:18px;text-align:center}
+.drawer-foot{padding:18px 22px;border-top:1px solid var(--bordure);background:var(--creme)}
+.total-panier{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px}
+.total-panier span{font-size:.85rem;color:var(--gris);font-weight:600}
+.total-panier strong{font-family:'Fraunces',serif;font-size:1.3rem;font-weight:900;color:var(--vert-fonce)}
+.drawer-foot .note{font-size:.74rem;color:var(--gris);margin-bottom:12px;display:flex;gap:8px;align-items:flex-start}
 .drawer-foot .note i{color:var(--orange);margin-top:2px}
-.btn-whatsapp{width:100%;justify-content:center;background:#1FAF54;color:#fff;font-size:1rem}
+.btn-whatsapp{width:100%;justify-content:center;background:#1FAF54;color:#fff;font-size:.98rem}
 .btn-whatsapp:hover{background:#178A41}
-.paiement-drawer{display:flex;justify-content:center;gap:10px;margin-top:12px;font-size:.74rem;font-weight:700;color:var(--gris)}
+.paiement-drawer{display:flex;justify-content:center;gap:10px;margin-top:11px;font-size:.72rem;font-weight:700;color:var(--gris)}
+.paiement-drawer span{display:inline-flex;align-items:center;gap:5px;background:#fff;border:1px solid var(--bordure);border-radius:8px;padding:4px 10px}
+.paiement-drawer .wave i{color:#1DC8FF}
+.paiement-drawer .om i{color:#FF7900}
+.paiement-drawer .liv i{color:#25D366}
 
 /* ===== TOAST ===== */
-.toast{position:fixed;bottom:26px;left:50%;transform:translate(-50%,80px);background:var(--vert-fonce);color:#fff;padding:13px 24px;border-radius:999px;font-weight:700;font-size:.9rem;z-index:200;display:flex;align-items:center;gap:9px;opacity:0;transition:all .35s;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.toast{position:fixed;bottom:24px;left:50%;transform:translate(-50%,80px);background:var(--vert-fonce);color:#fff;padding:12px 22px;border-radius:999px;font-weight:700;font-size:.88rem;z-index:200;display:flex;align-items:center;gap:9px;opacity:0;transition:all .35s;box-shadow:0 10px 30px rgba(0,0,0,.25)}
 .toast.show{transform:translate(-50%,0);opacity:1}
 .toast i{color:var(--orange-clair)}
 
 /* ===== RESPONSIVE ===== */
-@media (max-width:1020px){
-  .prod-card{grid-template-columns:1fr 1fr}
-  .prod-infos{grid-column:1/-1}
-  .piliers{grid-template-columns:1fr}
-  .chiffres{grid-template-columns:repeat(2,1fr)}
+@media (max-width:1080px){
+  .boutique-grid{grid-template-columns:1fr}
+  .sidebar{position:static;display:flex;overflow-x:auto;border-radius:var(--radius)}
+  .sidebar-titre{display:none}
+  .sidebar a.cat{border-bottom:none;border-right:1px solid #F2F0EA;white-space:nowrap}
+  .sidebar a.cat.actif{border-left:none;border-bottom:3px solid var(--vert);padding-left:18px}
+  .atouts .container{grid-template-columns:1fr 1fr}
 }
 @media (max-width:860px){
-  nav.menu{display:none;position:absolute;top:76px;left:0;right:0;background:#fff;flex-direction:column;gap:0;padding:10px 0;border-bottom:1px solid #E8DFCE;box-shadow:0 16px 30px rgba(0,0,0,.08)}
-  nav.menu.open{display:flex}
-  nav.menu a{padding:13px 24px}
-  .burger{display:block}
-  .hero .container,.export .container,.contact-grid{grid-template-columns:1fr}
-  .hero-figure{order:-1}
+  .nav{flex-wrap:wrap;height:auto;padding:10px 0;row-gap:10px}
+  .recherche{order:3;max-width:100%;flex-basis:100%}
+  .chip-wa span{display:none}
+  .export .container,.contact-grid{grid-template-columns:1fr}
   .foot{grid-template-columns:1fr}
 }
-@media (max-width:620px){
-  .prod-card{grid-template-columns:1fr}
-  .prod-sac{border-left:none;border-right:none;border-top:1px dashed #E0D5BE;border-bottom:1px dashed #E0D5BE;min-height:240px}
-  .chiffres{grid-template-columns:1fr 1fr;padding:28px 18px}
-  section{padding:56px 0}
+@media (max-width:560px){
+  .atouts .container{grid-template-columns:1fr}
+  .grille{grid-template-columns:repeat(auto-fill,minmax(165px,1fr));gap:12px}
+  .badge-logo{width:42px;height:42px}
 }
 </style>
 </head>
 <body>
 
-<!-- TOPBAR -->
-<div class="topbar">
-  <div class="container">
-    <span><i class="ti ti-map-pin"></i> Hann Mariste, Dakar — Sénégal</span>
-    <span><i class="ti ti-truck-delivery"></i> Import / Export — Livraison Dakar et régions</span>
-  </div>
-</div>
-
 <!-- HEADER -->
 <header>
   <div class="container nav">
     <a href="#accueil" class="brand">
-      <img src="logo-best-foods.png" alt="Logo Best Foods">
+      <img src="images/logo-badge.png" alt="Logo Best Foods">
       <span class="brand-name">BEST FOODS<small>La Qualité au Bon Prix</small></span>
     </a>
-    <nav class="menu" id="menu">
-      <a href="#accueil">Accueil</a>
-      <a href="#portfolio">Qui sommes-nous</a>
-      <a href="#produits">Nos Produits</a>
-      <a href="#export">Import / Export</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <div class="nav-actions">
+    <div class="recherche">
+      <input type="text" id="champRecherche" placeholder="Rechercher un produit, une origine..." aria-label="Rechercher">
+      <button type="button" aria-label="Rechercher"><i class="ti ti-search"></i></button>
+    </div>
+    <div class="nav-droite">
+      <a class="chip-wa" href="https://wa.me/221774976364" target="_blank" rel="noopener"><i class="ti ti-brand-whatsapp"></i><span>77 497 63 64</span></a>
       <button class="btn-cart" id="btnPanier" aria-label="Ouvrir le panier">
         <i class="ti ti-shopping-cart"></i>
         <span class="cart-count" id="cartCount">0</span>
       </button>
-      <button class="burger" id="burger" aria-label="Menu"><i class="ti ti-menu-2"></i></button>
     </div>
   </div>
 </header>
 
-<!-- HERO -->
+<!-- HERO VIDEO -->
 <section class="hero" id="accueil">
   <video class="hero-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
-    <source src="hero-bg.mp4" type="video/mp4">
+    <source src="videos/hero-bg.mp4" type="video/mp4">
   </video>
   <div class="container">
     <div>
-      <span class="eyebrow"><i class="ti ti-leaf"></i> Épices / Produits Alimentaires</span>
-      <h1>Des épices sélectionnées, <em>la qualité</em> au bon prix.</h1>
-      <p class="lead">Best Foods importe et distribue depuis Dakar des épices et produits alimentaires rigoureusement sélectionnés : tamarin, poivre noir, piment rouge, café, dattes, gingembre et bien plus. Du conteneur au détail, nous servons grossistes, commerçants et particuliers.</p>
-      <div class="hero-cta">
-        <a href="#produits" class="btn btn-vert"><i class="ti ti-basket"></i> Voir nos produits</a>
-        <a href="#contact" class="btn btn-ligne"><i class="ti ti-phone"></i> Nous contacter</a>
-      </div>
-      <div class="hero-points">
-        <span><i class="ti ti-certificate"></i> Qualité contrôlée</span>
-        <span><i class="ti ti-package"></i> Gros / Demi-gros / Détail</span>
-        <span><i class="ti ti-world"></i> Sourcing international</span>
-      </div>
+      <h1>Épices / Produits <em>Du Monde Entier</em></h1>
+      <p><i class="ti ti-circle-check"></i> Import direct <i class="ti ti-circle-check"></i> Qualité certifiée <i class="ti ti-circle-check"></i> Dakar, Sénégal</p>
     </div>
-    <figure class="hero-figure">
-      <img src="best-foods-spices.jpg" alt="Gamme de produits Best Foods : poivre, raisins secs, gingembre, café, petits pois, tamarin, laurier, noix de muscade, clous de girofle, piment rouge">
-      <div class="hero-stamp">
-        <img src="logo-badge.png" alt="Badge Best Foods">
-        <div>
-          <strong>Best Foods</strong>
-          <small>La Qualité au Bon Prix</small>
-        </div>
-      </div>
-    </figure>
+    <a href="https://wa.me/221774976364?text=Bonjour%20Best%20Foods%2C%20je%20souhaite%20commander%20en%20gros." target="_blank" rel="noopener" class="btn btn-blanc"><i class="ti ti-package"></i> Commander en gros <i class="ti ti-arrow-right"></i></a>
   </div>
 </section>
 
@@ -323,49 +289,53 @@ footer .container{position:relative;z-index:2}
   <div class="marquee-track" id="marqueeTrack"></div>
 </div>
 
-<!-- PORTFOLIO -->
-<section class="portfolio" id="portfolio">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow"><i class="ti ti-building-store"></i> Notre portfolio</span>
-      <h2>Une maison de confiance pour les produits alimentaires à Dakar</h2>
-      <p>Basée à Hann Mariste, Best Foods est une entreprise d'import-export spécialisée dans les épices et denrées alimentaires. Notre métier : sourcer les meilleures origines, contrôler la qualité et livrer au bon prix.</p>
-    </div>
-    <div class="piliers">
-      <div class="pilier">
-        <div class="ico"><i class="ti ti-world-download"></i></div>
-        <h3>Import / Sourcing</h3>
-        <p>Nous importons directement depuis les meilleures origines : Inde, Kenya, Madagascar, Brésil. Achat en conteneurs complets pour garantir des prix compétitifs toute l'année.</p>
+<!-- BOUTIQUE -->
+<section class="boutique">
+  <div class="container boutique-grid">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-titre"><i class="ti ti-menu-2"></i> Toutes les catégories</div>
+      <!-- généré en JS -->
+    </aside>
+
+    <!-- ZONE PRODUITS -->
+    <div>
+      <div class="zone-head">
+        <h2>Nos <em>Nouveaux Produits</em></h2>
+        <span class="total" id="totalProduits"></span>
       </div>
-      <div class="pilier">
-        <div class="ico"><i class="ti ti-rosette-discount-check"></i></div>
-        <h3>Contrôle Qualité</h3>
-        <p>Chaque arrivage est inspecté : taux d'humidité, calibre, pureté et propreté. Seuls les lots conformes à nos standards portent le badge Best Foods.</p>
+      <div class="chips" id="chips"></div>
+      <div class="zone-produits">
+        <div class="grille" id="grille"></div>
+        <div class="vide" id="aucunResultat" style="display:none">
+          <i class="ti ti-search-off"></i>
+          Aucun produit ne correspond à votre recherche.<br>Essayez un autre mot-clé ou une autre catégorie.
+        </div>
       </div>
-      <div class="pilier">
-        <div class="ico"><i class="ti ti-truck-delivery"></i></div>
-        <h3>Distribution / Export</h3>
-        <p>Vente en gros, demi-gros et détail. Conditionnement en sacs PP avec notre packaging, livraison à Dakar, dans les régions et export sous-régional.</p>
-      </div>
-    </div>
-    <div class="chiffres">
-      <div class="chiffre"><strong>14+</strong><small>Produits au catalogue</small></div>
-      <div class="chiffre"><strong>5</strong><small>Origines d'importation</small></div>
-      <div class="chiffre"><strong>100%</strong><small>Lots contrôlés</small></div>
-      <div class="chiffre"><strong>7j/7</strong><small>Commande WhatsApp</small></div>
     </div>
   </div>
 </section>
 
-<!-- PRODUITS -->
-<section id="produits">
+<!-- ATOUTS -->
+<section class="atouts">
   <div class="container">
-    <div class="section-head">
-      <span class="eyebrow"><i class="ti ti-basket"></i> Notre catalogue</span>
-      <h2>Nos Produits</h2>
-      <p>Pour chaque produit : le visuel du produit en vrac, son sac avec le packaging Best Foods, et la commande directe. Tous nos lots portent notre badge de qualité.</p>
+    <div class="atout">
+      <div class="ico"><i class="ti ti-world-download"></i></div>
+      <div><strong>Import direct</strong><p>Conteneurs complets depuis l'Inde, le Kenya, le Brésil, Madagascar.</p></div>
     </div>
-    <div class="prod-grid" id="prodGrid"></div>
+    <div class="atout">
+      <div class="ico"><i class="ti ti-rosette-discount-check"></i></div>
+      <div><strong>Qualité contrôlée</strong><p>Chaque lot inspecté : humidité, calibre, pureté. Badge Best Foods.</p></div>
+    </div>
+    <div class="atout">
+      <div class="ico"><i class="ti ti-truck-delivery"></i></div>
+      <div><strong>Livraison Dakar</strong><p>Livraison à Dakar et dans les régions, gros et détail.</p></div>
+    </div>
+    <div class="atout">
+      <div class="ico"><i class="ti ti-credit-card"></i></div>
+      <div><strong>Paiement simple</strong><p>Wave, Orange Money ou espèces à la livraison.</p></div>
+    </div>
   </div>
 </section>
 
@@ -373,7 +343,6 @@ footer .container{position:relative;z-index:2}
 <section class="export" id="export">
   <div class="container">
     <div>
-      <span class="eyebrow"><i class="ti ti-ship"></i> Logistique</span>
       <h2>Import / Export : <em>du conteneur</em> à votre boutique</h2>
       <p>Nous maîtrisons toute la chaîne : négociation à l'origine, transit maritime, dédouanement au Port de Dakar, stockage et reconditionnement en sacs Best Foods.</p>
       <ul class="export-liste">
@@ -384,27 +353,24 @@ footer .container{position:relative;z-index:2}
       </ul>
     </div>
     <figure class="export-img">
-      <img src="cafe-kenya.jpg" alt="Café en grains verts du Kenya avec le badge Best Foods">
+      <img src="images/sacs/cafe-kenya-sac.jpg" alt="Sac jute Café Kenya 50 kg avec le packaging Best Foods" loading="lazy">
     </figure>
   </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact">
+<!-- CONTACT + MAP -->
+<section class="contact" id="contact">
   <div class="container">
-    <div class="section-head">
-      <span class="eyebrow"><i class="ti ti-message-circle"></i> Contact</span>
-      <h2>Parlons de votre commande</h2>
-    </div>
+    <h2>Parlons de votre commande</h2>
     <div class="contact-grid">
       <div class="contact-card">
         <h3><i class="ti ti-map-pin"></i> Nous trouver</h3>
-        <div class="contact-ligne"><i class="ti ti-building"></i><span><strong>Best Foods</strong><br>Hann Mariste, près de Coris Bank<br>Dakar, Sénégal</span></div>
+        <div class="contact-ligne"><i class="ti ti-building"></i><span><strong>Best Foods</strong><br>Hann Mariste, en face Coris Bank<br>Dakar, Sénégal</span></div>
         <div class="contact-ligne"><i class="ti ti-clock"></i><span>Lundi – Samedi : 8h00 – 19h00</span></div>
       </div>
       <div class="contact-card">
         <h3><i class="ti ti-phone-call"></i> Commander</h3>
-        <div class="contact-ligne"><i class="ti ti-brand-whatsapp"></i><span><strong>WhatsApp :</strong> +221 77 699 00 00</span></div>
+        <div class="contact-ligne"><i class="ti ti-brand-whatsapp"></i><span><strong>WhatsApp :</strong> +221 77 497 63 64</span></div>
         <div class="contact-ligne"><i class="ti ti-credit-card"></i><span><strong>Paiement :</strong> Wave, Orange Money, espèces à la livraison</span></div>
         <div class="contact-ligne"><i class="ti ti-package"></i><span><strong>Gros et détail :</strong> devis rapide sur demande</span></div>
       </div>
@@ -422,24 +388,23 @@ footer .container{position:relative;z-index:2}
 <!-- FOOTER -->
 <footer>
   <video class="footer-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
-    <source src="footer-bg.mp4" type="video/mp4">
+    <source src="videos/footer-bg.mp4" type="video/mp4">
   </video>
   <div class="container">
     <div class="foot">
       <div>
-        <img src="logo-best-foods.png" alt="Logo Best Foods">
+        <img src="images/logo-badge.png" alt="Logo Best Foods">
         <p>Best Foods — import-export d'épices et de produits alimentaires à Dakar. La Qualité au Bon Prix, du conteneur au détail.</p>
       </div>
       <div>
         <h4>Navigation</h4>
         <a href="#accueil">Accueil</a>
-        <a href="#portfolio">Qui sommes-nous</a>
-        <a href="#produits">Nos Produits</a>
         <a href="#export">Import / Export</a>
+        <a href="#contact">Contact</a>
       </div>
       <div>
         <h4>Contact</h4>
-        <a href="https://wa.me/221776990000"><i class="ti ti-brand-whatsapp"></i> +221 77 699 00 00</a>
+        <a href="https://wa.me/221774976364"><i class="ti ti-brand-whatsapp"></i> +221 77 497 63 64</a>
         <a href="#contact"><i class="ti ti-map-pin"></i> Hann Mariste, Dakar</a>
       </div>
     </div>
@@ -456,12 +421,13 @@ footer .container{position:relative;z-index:2}
   </div>
   <div class="drawer-body" id="drawerBody"></div>
   <div class="drawer-foot">
-    <div class="note"><i class="ti ti-info-circle"></i> Les prix sont confirmés sur WhatsApp selon la quantité (gros / détail). Paiement Wave, Orange Money ou à la livraison.</div>
+    <div class="total-panier"><span>Total estimé</span><strong id="totalPanier">0 FCFA</strong></div>
+    <div class="note"><i class="ti ti-info-circle"></i> Les prix sur demande sont confirmés sur WhatsApp selon la quantité (gros / détail).</div>
     <button class="btn btn-whatsapp" id="btnCommander"><i class="ti ti-brand-whatsapp"></i> Commander sur WhatsApp</button>
     <div class="paiement-drawer">
-      <span class="pay wave"><i class="ti ti-wave-sine"></i> Wave</span>
-      <span class="pay om"><i class="ti ti-device-mobile"></i> Orange Money</span>
-      <span class="pay wa"><i class="ti ti-cash"></i> À la livraison</span>
+      <span class="wave"><i class="ti ti-wave-sine"></i> Wave</span>
+      <span class="om"><i class="ti ti-device-mobile"></i> Orange Money</span>
+      <span class="liv"><i class="ti ti-cash"></i> À la livraison</span>
     </div>
   </div>
 </aside>
@@ -470,32 +436,43 @@ footer .container{position:relative;z-index:2}
 
 <script>
 /* ============================================================
-   CONFIGURATION — à modifier facilement
+   CONFIGURATION
    ============================================================ */
-var WHATSAPP_NUMBER = "221776990000"; // numero WhatsApp Best Foods
+var WHATSAPP_NUMBER = "221774976364"; // 77 497 63 64
 
-/* Catalogue produits.
-   - image : visuel du produit en vrac (dossier )
-   - sac   : photo du sac avec packaging Best Foods (dossier sacs/)
-             si le fichier n'existe pas encore, un emplacement avec le logo s'affiche automatiquement
-   - prix  : null = "Prix sur demande" (gros/détail confirmés sur WhatsApp) */
+/* Catalogue.
+   - image : visuel du produit en vrac
+   - sac   : packaging Best Foods (bouton "Voir le sac" sur la carte) — null si pas encore de photo
+   - prix  : montant en FCFA, ou null = "Prix sur demande" */
 var PRODUCTS = [
-  { id:"tamarin",          nom:"Tamarin",             origine:"Inde",            image:"tamarin.jpg",            sac:"sacs/tamarin-sac.jpg",          desc:"Gousses de tamarin entières, riches en pulpe, idéales pour jus, sauces et confiseries.", unite:"carton de 10 kg", prix:null, tag:"Best-seller" },
-  { id:"poivre-noir",      nom:"Poivre Noir",         origine:"Brésil",      image:"poivre-noir.jpg",        sac:"sacs/poivre-noir-sac.jpg",      desc:"Poivre noir en grains, arôme puissant et piquant équilibré, calibre régulier.", unite:"sac de 25 kg", prix:null, tag:"Best-seller" },
-  { id:"piment-rouge",     nom:"Piment Rouge",        origine:"Inde",            image:"piment-rouge.jpg",       sac:"sacs/piment-rouge-sac.jpg",     desc:"Piment rouge séché entier, couleur intense et force constante, séchage contrôlé.", unite:"sac de 25 kg", prix:null, tag:"Fort" },
-  { id:"gingembre",        nom:"Gingembre Frais",     origine:"Import direct",   image:"gingembre.jpg",          sac:"sacs/gingembre-sac.jpg",        desc:"Rhizomes de gingembre frais, charnus et parfumés, parfaits pour jus et cuisine.", unite:"carton / sac", prix:null, tag:"Frais" },
-  { id:"cafe-kenya",       nom:"Café Grains Verts",   origine:"Kenya",           image:"cafe-kenya.jpg",         sac:"sacs/cafe-kenya-sac.jpg",       desc:"Café en grains verts du Kenya, qualité export, prêt pour torréfaction artisanale.", unite:"sac jute de 50 kg", prix:null, tag:"Premium" },
-  { id:"dattes",           nom:"Dattes",              origine:"Afrique du Nord", image:"dattes.jpg",             sac:"sacs/dattes-sac.jpg",           desc:"Dattes naturelles sucrées et moelleuses, triées à la main, idéales Ramadan et détail.", unite:"carton de 10 kg", prix:null, tag:"Saison" },
-  { id:"lait-poudre",      nom:"Lait en Poudre Yoghurt King", origine:"Irlande", image:"lait-yoghurt-king.jpg", sac:"lait-yoghurt-king.jpg", desc:"Poudre instantanée enrichie en matières grasses (Instant Fat Filled Powder), produite en Irlande. Idéale pour yaourt, lait caillé et pâtisserie.", unite:"sac de 25 kg", prix:null, tag:"Nouveau" },
-  { id:"raisins-secs",     nom:"Raisins Secs Blonds", origine:"Import direct",   image:"raisins-secs.jpg",       sac:"sacs/raisins-secs-sac.jpg",     desc:"Raisins secs blonds dorés, sucrés et charnus, pour pâtisserie, thiéré et vente au détail.", unite:"carton de 10 kg", prix:null, tag:"Sucré" },
-  { id:"noix-de-muscade",  nom:"Noix de Muscade",     origine:"Indonésie",       image:"noix-de-muscade.jpg",    sac:"sacs/noix-de-muscade-sac.jpg",  desc:"Noix de muscade entières, calibre uniforme, arôme chaud et boisé.", unite:"carton de 10 kg", prix:null, tag:"Épice fine" },
-  { id:"clous-de-girofle", nom:"Clous de Girofle",    origine:"Indonésie",      image:"clous-de-girofle.jpg",   sac:"sacs/clous-de-girofle-sac.jpg", desc:"Clous de girofle entiers à forte teneur en huile, parfum intense, qualité export.", unite:"carton de 10 kg", prix:null, tag:"Épice fine" },
-  { id:"feuilles-laurier", nom:"Feuilles de Laurier", origine:"Import direct",   image:"feuilles-de-laurier.jpg",sac:"sacs/feuilles-laurier-sac.jpg", desc:"Feuilles de laurier séchées entières, couleur verte préservée, arôme délicat.", unite:"sac de 5 kg", prix:null, tag:"Aromate" },
-  { id:"curcuma",          nom:"Curcuma",             origine:"Inde",            image:"curcuma.jpg",            sac:"sacs/curcuma-sac.jpg",          desc:"Curcuma de qualité supérieure, couleur dorée intense, pour cuisine et bien-être.", unite:"sac de 25 kg", prix:null, tag:"Épice fine" },
-  { id:"petits-pois",      nom:"Petits Pois Secs",    origine:"Import direct",   image:"petits-pois.jpg",        sac:"sacs/petits-pois-sac.jpg",      desc:"Petits pois secs verts, calibre homogène, cuisson rapide, parfaits pour le détail.", unite:"sac de 25 kg", prix:null, tag:"Légumineuse" },
-  { id:"lentilles",        nom:"Lentilles",           origine:"Import direct",   image:"lentilles.jpg",          sac:"sacs/lentilles-sac.jpg",        desc:"Lentilles brunes triées et nettoyées, sans impuretés, riches en protéines.", unite:"sac de 25 kg", prix:null, tag:"Légumineuse" },
-  { id:"sucre",            nom:"Sucre",               origine:"Brésil",          image:"sucre-placeholder.svg",  sac:"sacs/sucre-sac.jpg",            desc:"Sucre cristallisé blanc, qualité standard import, disponible en gros volumes.", unite:"sac de 50 kg", prix:null, tag:"Gros volume" }
+  { id:"petits-pois",      nom:"Petits Pois",         cat:"Légumineuses", origine:"Argentine",        unite:"sac 20 kg",   prix:18500, badge:"Légumineuse",   image:"images/petits-pois.jpg",         sac:null },
+  { id:"tamarin",          nom:"Tamarind",            cat:"Fruits Secs",  origine:"Inde",             unite:"boîte 10 kg", prix:12000, badge:"Naturel",       image:"images/tamarin.jpg",             sac:"images/sacs/tamarin-sac.jpg" },
+  { id:"cafe-kenya",       nom:"Café Kenya",          cat:"Café",         origine:"Kenya",            unite:"sac 50 kg",   prix:65000, badge:"Premium",       image:"images/cafe-kenya.jpg",          sac:"images/sacs/cafe-kenya-sac.jpg" },
+  { id:"piment-rouge",     nom:"Piment Rouge",        cat:"Épices",       origine:"Inde",             unite:"sac 10 kg",   prix:9500,  badge:"Niveau 7/7",    image:"images/piment-rouge.jpg",        sac:"images/sacs/piment-rouge-sac.jpg" },
+  { id:"poivre-noir",      nom:"Poivre Noir",         cat:"Épices",       origine:"Brésil",           unite:"sac 25 kg",   prix:22000, badge:"Qualité Export",image:"images/poivre-noir.jpg",         sac:"images/sacs/poivre-noir-sac.jpg" },
+  { id:"best-foods-spices",nom:"Best Foods Spices",   cat:"Épices",       origine:"Blend International", unite:"variable", prix:null,  badge:"Signature",     image:"images/best-foods-spices.jpg",   sac:null },
+  { id:"raisins-secs",     nom:"Raisins Secs",        cat:"Fruits Secs",  origine:"Iran",             unite:"carton 10 kg",prix:null,  badge:"Naturel",       image:"images/raisins-secs.jpg",        sac:null },
+  { id:"clous-de-girofle", nom:"Clous de Girofle",    cat:"Épices",       origine:"Madagascar",       unite:"carton 10 kg",prix:null,  badge:"Premium",       image:"images/clous-de-girofle.jpg",    sac:"images/sacs/clous-de-girofle-sac.jpg" },
+  { id:"lentilles",        nom:"Lentilles",           cat:"Légumineuses", origine:"Canada",           unite:"sac 25 kg",   prix:null,  badge:"Légumineuse",   image:"images/lentilles.jpg",           sac:null },
+  { id:"sucre",            nom:"Sucre",               cat:"Épicerie",     origine:"Brésil",           unite:"sac 50 kg",   prix:null,  badge:"Économique",    image:"images/sucre-placeholder.svg",   sac:null },
+  { id:"noix-de-muscade",  nom:"Noix de Muscade",     cat:"Épices",       origine:"Indonésie",        unite:"carton 10 kg",prix:null,  badge:"Épice fine",    image:"images/noix-de-muscade.jpg",     sac:"images/sacs/noix-de-muscade-sac.jpg" },
+  { id:"gingembre",        nom:"Gingembre Frais",     cat:"Épices",       origine:"Import direct",    unite:"carton",      prix:null,  badge:"Frais",         image:"images/gingembre.jpg",           sac:null },
+  { id:"feuilles-laurier", nom:"Feuilles de Laurier", cat:"Épices",       origine:"Import direct",    unite:"sac 5 kg",    prix:null,  badge:"Aromate",       image:"images/feuilles-de-laurier.jpg", sac:null },
+  { id:"curcuma",          nom:"Curcuma",             cat:"Épices",       origine:"Inde",             unite:"sac 25 kg",   prix:null,  badge:"Épice fine",    image:"images/curcuma.jpg",             sac:null },
+  { id:"dattes",           nom:"Dattes",              cat:"Fruits Secs",  origine:"Afrique du Nord",  unite:"carton 10 kg",prix:null,  badge:"Saison",        image:"images/dattes.jpg",              sac:null },
+  { id:"lait-poudre",      nom:"Lait en Poudre Yoghurt King", cat:"Épicerie", origine:"Irlande",      unite:"sac 25 kg",   prix:null,  badge:"Nouveau",       image:"images/lait-yoghurt-king.jpg",   sac:"images/lait-yoghurt-king.jpg" }
 ];
+
+var CAT_ICONES = {
+  "Tous les produits":"ti-building-store",
+  "Épices":"ti-pepper",
+  "Légumineuses":"ti-seeding",
+  "Café":"ti-coffee",
+  "Fruits Secs":"ti-apple",
+  "Épicerie":"ti-basket"
+};
+
+var etat = { cat:"Tous les produits", recherche:"" };
 
 /* ============================================================
    MARQUEE
@@ -503,61 +480,107 @@ var PRODUCTS = [
 (function(){
   var t = document.getElementById('marqueeTrack');
   var items = PRODUCTS.map(function(p){ return '<span><i class="ti ti-leaf"></i>' + p.nom + '</span>'; }).join('');
-  t.innerHTML = items + items; // doublé pour la boucle infinie
+  t.innerHTML = items + items;
 })();
 
 /* ============================================================
-   RENDU DES CARTES PRODUITS
+   SIDEBAR + CHIPS
    ============================================================ */
-function renderProducts(){
-  var grid = document.getElementById('prodGrid');
-  grid.innerHTML = PRODUCTS.map(function(p){
+function categories(){
+  var cats = ["Tous les produits","Épices","Légumineuses","Café","Fruits Secs","Épicerie"];
+  return cats.map(function(c){
+    var n = c === "Tous les produits" ? PRODUCTS.length : PRODUCTS.filter(function(p){ return p.cat === c; }).length;
+    return { nom:c, n:n };
+  });
+}
+
+function renderNavigation(){
+  var side = document.getElementById('sidebar');
+  var chips = document.getElementById('chips');
+  var html = '<div class="sidebar-titre"><i class="ti ti-menu-2"></i> Toutes les catégories</div>';
+  var chipsHtml = '';
+  categories().forEach(function(c){
+    var actif = etat.cat === c.nom ? ' actif' : '';
+    html += '<a class="cat' + actif + '" onclick="setCat(\'' + c.nom + '\')"><i class="ti ' + (CAT_ICONES[c.nom]||'ti-tag') + '"></i> ' + c.nom + '<span class="compte">' + c.n + '</span></a>';
+    chipsHtml += '<button class="' + (etat.cat === c.nom ? 'actif' : '') + '" onclick="setCat(\'' + c.nom + '\')">' + c.nom + '</button>';
+  });
+  side.innerHTML = html;
+  chips.innerHTML = chipsHtml;
+}
+
+function setCat(c){
+  etat.cat = c;
+  renderNavigation();
+  renderGrille();
+}
+
+/* ============================================================
+   GRILLE PRODUITS
+   ============================================================ */
+function produitsFiltres(){
+  var r = etat.recherche.toLowerCase().trim();
+  return PRODUCTS.filter(function(p){
+    var okCat = etat.cat === "Tous les produits" || p.cat === etat.cat;
+    var okRech = !r || (p.nom + ' ' + p.origine + ' ' + p.cat).toLowerCase().indexOf(r) !== -1;
+    return okCat && okRech;
+  });
+}
+
+function renderGrille(){
+  var liste = produitsFiltres();
+  var g = document.getElementById('grille');
+  document.getElementById('totalProduits').textContent = liste.length + ' produit' + (liste.length > 1 ? 's' : '');
+  document.getElementById('aucunResultat').style.display = liste.length ? 'none' : 'block';
+  g.innerHTML = liste.map(function(p){
+    var prixHtml = p.prix
+      ? '<strong>' + p.prix.toLocaleString('fr-FR') + ' FCFA</strong><small>/ ' + p.unite + '</small>'
+      : '<span class="demande">Prix sur demande</span><small>/ ' + p.unite + '</small>';
+    var btnSac = p.sac
+      ? '<button type="button" class="btn-sac" onclick="toggleSac(this,\'' + p.id + '\')" data-mode="produit"><i class="ti ti-package"></i> Voir le sac</button>'
+      : '';
     return '' +
-    '<article class="prod-card" id="card-' + p.id + '">' +
-      '<div class="prod-visuel">' +
-        '<span class="prod-tag"><i class="ti ti-eye"></i> Produit visible</span>' +
-        '<img src="' + p.image + '" alt="' + p.nom + ' en vrac — Best Foods" loading="lazy">' +
+    '<article class="carte">' +
+      '<div class="carte-img">' +
+        '<span class="badge-cat">' + p.badge + '</span>' +
+        '<img class="visu" id="visu-' + p.id + '" src="' + p.image + '" alt="' + p.nom + ' — Best Foods" loading="lazy">' +
+        btnSac +
+        '<span class="badge-logo"><img src="images/logo-badge.png" alt="Badge Best Foods"></span>' +
       '</div>' +
-      '<div class="prod-sac">' +
-        '<span class="prod-tag orange" style="position:absolute;top:14px;left:14px;z-index:2"><i class="ti ti-package"></i> Notre packaging</span>' +
-        '<img src="' + p.sac + '" alt="Sac ' + p.nom + ' avec packaging Best Foods" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">' +
-        '<div class="sac-placeholder" style="display:none">' +
-          '<img src="logo-watermark-green.png" alt="">' +
-          '<p>Photo du sac ' + p.nom + ' avec packaging Best Foods — bientôt disponible</p>' +
-        '</div>' +
-      '</div>' +
-      '<div class="prod-infos">' +
+      '<div class="carte-corps">' +
+        '<span class="carte-cat">' + p.cat + '</span>' +
         '<h3>' + p.nom + '</h3>' +
-        '<span class="prod-origine"><i class="ti ti-world"></i> Origine : ' + p.origine + '</span>' +
-        '<p class="prod-desc">' + p.desc + '</p>' +
-        '<div class="prod-conditionnement">' +
-          '<span><i class="ti ti-package"></i> ' + p.unite + '</span>' +
-          '<span><i class="ti ti-scale"></i> Gros / Détail</span>' +
-        '</div>' +
-        '<div class="prod-prix"><i class="ti ti-tag"></i> ' + (p.prix ? p.prix.toLocaleString('fr-FR') + ' FCFA' : 'Prix sur demande') + '</div>' +
-        '<div class="prod-achat">' +
-          '<span class="qty">' +
-            '<button type="button" onclick="changeQty(\'' + p.id + '\',-1)" aria-label="Diminuer"><i class="ti ti-minus"></i></button>' +
-            '<input type="number" id="qty-' + p.id + '" value="1" min="1" max="999" aria-label="Quantité">' +
-            '<button type="button" onclick="changeQty(\'' + p.id + '\',1)" aria-label="Augmenter"><i class="ti ti-plus"></i></button>' +
-          '</span>' +
-          '<button type="button" class="btn btn-panier" onclick="addToCart(\'' + p.id + '\')"><i class="ti ti-shopping-cart-plus"></i> Ajouter au panier</button>' +
-        '</div>' +
-        '<div class="prod-paiement">' +
-          'Paiement :' +
-          '<span class="pay wave"><i class="ti ti-wave-sine"></i> Wave</span>' +
-          '<span class="pay om"><i class="ti ti-device-mobile"></i> Orange Money</span>' +
-          '<span class="pay wa"><i class="ti ti-brand-whatsapp"></i> WhatsApp</span>' +
-        '</div>' +
-        '<div class="prod-badge">' +
-          '<img src="logo-badge.png" alt="Badge qualité Best Foods">' +
-          '<small>Qualité certifiée Best Foods</small>' +
-        '</div>' +
+        '<span class="carte-origine"><i class="ti ti-world"></i> ' + p.origine + ' · ' + p.unite + '</span>' +
+        '<div class="carte-prix">' + prixHtml + '</div>' +
+        '<button type="button" class="btn btn-ajouter" onclick="addToCart(\'' + p.id + '\')"><i class="ti ti-shopping-cart-plus"></i> Ajouter</button>' +
       '</div>' +
     '</article>';
   }).join('');
 }
-renderProducts();
+
+/* Bascule visuel produit <-> sac packaging */
+function toggleSac(btn, id){
+  var p = PRODUCTS.find(function(x){ return x.id === id; });
+  var img = document.getElementById('visu-' + id);
+  if (btn.dataset.mode === 'produit'){
+    img.src = p.sac;
+    img.classList.add('sac-affiche');
+    btn.dataset.mode = 'sac';
+    btn.innerHTML = '<i class="ti ti-eye"></i> Voir le produit';
+  } else {
+    img.src = p.image;
+    img.classList.remove('sac-affiche');
+    btn.dataset.mode = 'produit';
+    btn.innerHTML = '<i class="ti ti-package"></i> Voir le sac';
+  }
+}
+
+/* ============================================================
+   RECHERCHE
+   ============================================================ */
+document.getElementById('champRecherche').addEventListener('input', function(){
+  etat.recherche = this.value;
+  renderGrille();
+});
 
 /* ============================================================
    PANIER (localStorage : bestfoods_cart)
@@ -566,24 +589,26 @@ var CART_KEY = 'bestfoods_cart';
 function getCart(){ try{ return JSON.parse(localStorage.getItem(CART_KEY)) || []; }catch(e){ return []; } }
 function saveCart(c){ localStorage.setItem(CART_KEY, JSON.stringify(c)); updateCartUI(); }
 
-function changeQty(id, delta){
-  var input = document.getElementById('qty-' + id);
-  var v = parseInt(input.value || '1', 10) + delta;
-  input.value = Math.max(1, Math.min(999, v));
-}
-
 function addToCart(id){
   var p = PRODUCTS.find(function(x){ return x.id === id; });
-  var qty = parseInt(document.getElementById('qty-' + id).value || '1', 10);
   var cart = getCart();
   var existing = cart.find(function(x){ return x.id === id; });
-  if (existing){ existing.qty += qty; } else { cart.push({ id:id, qty:qty }); }
+  if (existing){ existing.qty += 1; } else { cart.push({ id:id, qty:1 }); }
   saveCart(cart);
-  showToast(p.nom + ' ajouté au panier (' + qty + ' × ' + p.unite + ')');
+  showToast(p.nom + ' ajouté au panier');
 }
 
 function removeFromCart(id){
   saveCart(getCart().filter(function(x){ return x.id !== id; }));
+}
+
+function changeQty(id, delta){
+  var cart = getCart();
+  var item = cart.find(function(x){ return x.id === id; });
+  if (!item) return;
+  item.qty += delta;
+  if (item.qty <= 0){ cart = cart.filter(function(x){ return x.id !== id; }); }
+  saveCart(cart);
 }
 
 function updateCartUI(){
@@ -591,33 +616,52 @@ function updateCartUI(){
   var total = cart.reduce(function(s,x){ return s + x.qty; }, 0);
   document.getElementById('cartCount').textContent = total;
   var body = document.getElementById('drawerBody');
+  var montant = 0, surDemande = false;
   if (!cart.length){
-    body.innerHTML = '<div class="panier-vide"><i class="ti ti-shopping-cart-off"></i>Votre panier est vide.<br>Ajoutez des produits depuis le catalogue.</div>';
+    body.innerHTML = '<div class="panier-vide"><i class="ti ti-shopping-cart-off"></i>Votre panier est vide.<br>Ajoutez des produits depuis la boutique.</div>';
+    document.getElementById('totalPanier').textContent = '0 FCFA';
     return;
   }
   body.innerHTML = cart.map(function(item){
     var p = PRODUCTS.find(function(x){ return x.id === item.id; });
+    var ligne;
+    if (p.prix){ montant += p.prix * item.qty; ligne = (p.prix * item.qty).toLocaleString('fr-FR') + ' F'; }
+    else { surDemande = true; ligne = 'Sur demande'; }
     return '<div class="ligne-panier">' +
       '<img src="' + p.image + '" alt="' + p.nom + '">' +
-      '<div class="det"><strong>' + p.nom + '</strong><small>' + item.qty + ' × ' + p.unite + ' — Origine : ' + p.origine + '</small></div>' +
+      '<div class="det"><strong>' + p.nom + '</strong><small>' + p.unite + ' · ' + p.origine + '</small>' +
+        '<span class="qte-mini">' +
+          '<button onclick="changeQty(\'' + p.id + '\',-1)" aria-label="Diminuer"><i class="ti ti-minus"></i></button>' +
+          '<span>' + item.qty + '</span>' +
+          '<button onclick="changeQty(\'' + p.id + '\',1)" aria-label="Augmenter"><i class="ti ti-plus"></i></button>' +
+        '</span>' +
+      '</div>' +
+      '<span class="prix-ligne">' + ligne + '</span>' +
       '<button class="sup" onclick="removeFromCart(\'' + p.id + '\')" aria-label="Retirer ' + p.nom + '"><i class="ti ti-trash"></i></button>' +
     '</div>';
   }).join('');
+  document.getElementById('totalPanier').textContent = montant.toLocaleString('fr-FR') + ' FCFA' + (surDemande ? ' +' : '');
 }
 
 function commanderWhatsApp(){
   var cart = getCart();
   if (!cart.length){ showToast('Votre panier est vide'); return; }
+  var montant = 0, surDemande = false;
   var lignes = cart.map(function(item){
     var p = PRODUCTS.find(function(x){ return x.id === item.id; });
-    return '- ' + p.nom + ' : ' + item.qty + ' x ' + p.unite;
+    var l = '- ' + p.nom + ' : ' + item.qty + ' x ' + p.unite;
+    if (p.prix){ montant += p.prix * item.qty; l += ' = ' + (p.prix * item.qty).toLocaleString('fr-FR') + ' FCFA'; }
+    else { surDemande = true; l += ' (prix a confirmer)'; }
+    return l;
   }).join('\n');
-  var msg = 'Bonjour Best Foods,\n\nJe souhaite commander :\n' + lignes + '\n\nMerci de me confirmer les prix et la disponibilite.\nPaiement souhaite : Wave / Orange Money / a la livraison.';
+  var msg = 'Bonjour Best Foods,\n\nJe souhaite commander :\n' + lignes +
+    '\n\nTotal estime : ' + montant.toLocaleString('fr-FR') + ' FCFA' + (surDemande ? ' + produits sur demande' : '') +
+    '\n\nPaiement souhaite : Wave / Orange Money / a la livraison.\nMerci de me confirmer la disponibilite.';
   window.open('https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(msg), '_blank');
 }
 
 /* ============================================================
-   UI : drawer, toast, burger
+   UI : drawer, toast
    ============================================================ */
 var drawer = document.getElementById('drawer');
 var overlay = document.getElementById('overlay');
@@ -634,16 +678,11 @@ function showToast(msg){
   document.getElementById('toastMsg').textContent = msg;
   t.classList.add('show');
   clearTimeout(toastTimer);
-  toastTimer = setTimeout(function(){ t.classList.remove('show'); }, 2600);
+  toastTimer = setTimeout(function(){ t.classList.remove('show'); }, 2400);
 }
 
-document.getElementById('burger').addEventListener('click', function(){
-  document.getElementById('menu').classList.toggle('open');
-});
-document.querySelectorAll('#menu a').forEach(function(a){
-  a.addEventListener('click', function(){ document.getElementById('menu').classList.remove('open'); });
-});
-
+renderNavigation();
+renderGrille();
 updateCartUI();
 </script>
 </body>
