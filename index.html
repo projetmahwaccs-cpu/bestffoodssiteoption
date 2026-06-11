@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Best Foods — La Qualité au Bon Prix | Épices et Produits Alimentaires, Dakar</title>
+<meta name="description" content="Best Foods, import-export d'épices et produits alimentaires à Dakar : tamarin, poivre noir, piment rouge, café, dattes, gingembre. La Qualité au Bon Prix.">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.47.0/tabler-icons.min.css">
+<style>
+:root{
+  --vert:#1B5E20;
+  --vert-fonce:#0E3F13;
+  --vert-clair:#2E7D32;
+  --orange:#E8821A;
+  --orange-clair:#F5A623;
+  --creme:#FBF7EF;
+  --creme-fonce:#F3EBDC;
+  --brun:#3E2A18;
+  --blanc:#FFFFFF;
+  --gris:#6B6257;
+  --radius:18px;
+  --ombre:0 10px 30px rgba(27,94,32,.10);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--creme);color:var(--brun);line-height:1.6}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+h1,h2,h3,.display{font-family:'Fraunces',serif}
+.container{max-width:1240px;margin:0 auto;padding:0 22px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--orange);margin-bottom:14px}
+.eyebrow i{font-size:1rem}
+section{padding:80px 0}
+
+/* ===== TOPBAR ===== */
+.topbar{background:var(--vert-fonce);color:#DCEBDD;font-size:.8rem;padding:7px 0}
+.topbar .container{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+.topbar span{display:inline-flex;align-items:center;gap:6px}
+.topbar i{color:var(--orange-clair)}
+
+/* ===== HEADER ===== */
+header{position:sticky;top:0;z-index:90;background:rgba(251,247,239,.92);backdrop-filter:blur(10px);border-bottom:1px solid #E8DFCE}
+.nav{display:flex;align-items:center;justify-content:space-between;height:76px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{height:54px;width:54px;object-fit:contain}
+.brand-name{font-family:'Fraunces',serif;font-weight:900;font-size:1.25rem;color:var(--vert);line-height:1.05}
+.brand-name small{display:block;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700;font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:var(--orange)}
+nav.menu{display:flex;gap:28px;font-weight:600;font-size:.92rem}
+nav.menu a{position:relative;padding:6px 0;color:var(--brun)}
+nav.menu a:hover{color:var(--vert)}
+nav.menu a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--orange);transition:width .25s}
+nav.menu a:hover::after{width:100%}
+.nav-actions{display:flex;align-items:center;gap:12px}
+.btn-cart{position:relative;display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:50%;background:var(--vert);color:#fff;border:none;cursor:pointer;font-size:1.25rem;transition:transform .2s}
+.btn-cart:hover{transform:scale(1.07)}
+.cart-count{position:absolute;top:-4px;right:-4px;background:var(--orange);color:#fff;font-size:.68rem;font-weight:800;min-width:20px;height:20px;border-radius:10px;display:flex;align-items:center;justify-content:center;padding:0 5px}
+.burger{display:none;background:none;border:none;font-size:1.6rem;color:var(--vert);cursor:pointer}
+
+/* ===== HERO ===== */
+.hero{padding:64px 0 70px;background:
+  radial-gradient(900px 420px at 85% -10%, rgba(245,166,35,.18), transparent 60%),
+  radial-gradient(700px 380px at -10% 110%, rgba(46,125,50,.14), transparent 60%),
+  var(--creme)}
+.hero .container{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center}
+.hero h1{font-size:clamp(2.3rem,4.6vw,3.7rem);font-weight:900;line-height:1.07;color:var(--vert-fonce)}
+.hero h1 em{font-style:italic;color:var(--orange)}
+.hero p.lead{margin:20px 0 30px;font-size:1.06rem;color:var(--gris);max-width:52ch}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:14px 26px;border-radius:999px;font-weight:700;font-size:.95rem;border:none;cursor:pointer;transition:all .22s}
+.btn-vert{background:var(--vert);color:#fff}
+.btn-vert:hover{background:var(--vert-fonce);transform:translateY(-2px)}
+.btn-ligne{background:transparent;color:var(--vert);border:2px solid var(--vert)}
+.btn-ligne:hover{background:var(--vert);color:#fff}
+.hero-figure{position:relative}
+.hero-figure img{border-radius:26px;box-shadow:0 26px 60px rgba(27,94,32,.22);border:6px solid #fff}
+.hero-stamp{position:absolute;bottom:-22px;left:-22px;background:#fff;border-radius:16px;box-shadow:var(--ombre);padding:14px 18px;display:flex;align-items:center;gap:12px}
+.hero-stamp img{height:52px;width:52px;border:none;box-shadow:none;border-radius:0}
+.hero-stamp strong{display:block;color:var(--vert);font-size:.95rem;line-height:1.2}
+.hero-stamp small{color:var(--gris);font-size:.74rem}
+.hero-points{margin-top:34px;display:flex;gap:26px;flex-wrap:wrap}
+.hero-points span{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:.86rem;color:var(--vert-fonce)}
+.hero-points i{color:var(--orange);font-size:1.15rem}
+
+/* ===== MARQUEE ===== */
+.marquee{background:var(--vert);color:#EAF4EA;overflow:hidden;padding:13px 0;border-top:3px solid var(--orange);border-bottom:3px solid var(--orange)}
+.marquee-track{display:flex;gap:46px;white-space:nowrap;animation:defile 28s linear infinite;font-weight:700;font-size:.88rem;letter-spacing:.06em;text-transform:uppercase}
+.marquee-track span{display:inline-flex;align-items:center;gap:10px}
+.marquee-track i{color:var(--orange-clair)}
+@keyframes defile{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion: reduce){.marquee-track{animation:none}}
+
+/* ===== PORTFOLIO ===== */
+.portfolio{background:var(--blanc)}
+.section-head{max-width:680px;margin-bottom:48px}
+.section-head h2{font-size:clamp(1.8rem,3.4vw,2.6rem);font-weight:900;color:var(--vert-fonce);line-height:1.15}
+.section-head p{margin-top:14px;color:var(--gris)}
+.piliers{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.pilier{background:var(--creme);border:1px solid #EADFC9;border-radius:var(--radius);padding:32px 28px;transition:transform .22s,box-shadow .22s}
+.pilier:hover{transform:translateY(-6px);box-shadow:var(--ombre)}
+.pilier .ico{width:58px;height:58px;border-radius:16px;background:var(--vert);color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.7rem;margin-bottom:20px}
+.pilier:nth-child(2) .ico{background:var(--orange)}
+.pilier h3{font-size:1.22rem;font-weight:700;color:var(--vert-fonce);margin-bottom:10px}
+.pilier p{font-size:.92rem;color:var(--gris)}
+.chiffres{margin-top:54px;display:grid;grid-template-columns:repeat(4,1fr);gap:18px;background:var(--vert-fonce);border-radius:22px;padding:38px 30px}
+.chiffre{text-align:center;color:#fff}
+.chiffre strong{font-family:'Fraunces',serif;font-size:2.2rem;font-weight:900;color:var(--orange-clair);display:block}
+.chiffre small{font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:#BFD9C1}
+
+/* ===== PRODUITS ===== */
+#produits{position:relative;background:var(--creme)}
+#produits::before{content:"";position:absolute;inset:0;background:url('images/fond-produits.jpg') center/520px repeat;opacity:.10;pointer-events:none}
+#produits .container{position:relative;z-index:1}
+.prod-grid{display:flex;flex-direction:column;gap:30px}
+.prod-card{background:#fff;border:1px solid #EADFC9;border-radius:24px;overflow:hidden;display:grid;grid-template-columns:1fr 1fr 1.15fr;box-shadow:0 4px 18px rgba(62,42,24,.05);transition:box-shadow .25s}
+.prod-card:hover{box-shadow:0 18px 44px rgba(27,94,32,.14)}
+.prod-visuel{position:relative;min-height:300px}
+.prod-visuel img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.prod-tag{position:absolute;top:14px;left:14px;background:rgba(14,63,19,.88);color:#fff;font-size:.68rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:999px;display:inline-flex;align-items:center;gap:6px;backdrop-filter:blur(4px)}
+.prod-tag.orange{background:rgba(232,130,26,.92)}
+.prod-sac{position:relative;border-left:1px dashed #E0D5BE;border-right:1px dashed #E0D5BE;background:var(--creme-fonce)}
+.sac-placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:24px;text-align:center}
+.sac-placeholder img{width:84px;height:84px;object-fit:contain;position:static;opacity:.9}
+.sac-placeholder p{font-size:.82rem;font-weight:600;color:var(--gris);max-width:22ch}
+.prod-infos{padding:30px 30px 22px;display:flex;flex-direction:column}
+.prod-infos h3{font-size:1.5rem;font-weight:900;color:var(--vert-fonce)}
+.prod-origine{display:inline-flex;align-items:center;gap:7px;color:var(--orange);font-weight:700;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;margin:6px 0 12px}
+.prod-desc{font-size:.9rem;color:var(--gris);margin-bottom:16px;flex-grow:1}
+.prod-conditionnement{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.prod-conditionnement span{background:var(--creme);border:1px solid #E5D9C0;border-radius:999px;font-size:.74rem;font-weight:700;padding:5px 12px;color:var(--brun);display:inline-flex;align-items:center;gap:6px}
+.prod-conditionnement i{color:var(--vert-clair)}
+.prod-prix{font-family:'Fraunces',serif;font-weight:900;font-size:1.15rem;color:var(--vert);margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.prod-prix i{color:var(--orange)}
+.prod-achat{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.qty{display:inline-flex;align-items:center;border:2px solid var(--vert);border-radius:999px;overflow:hidden}
+.qty button{background:none;border:none;width:36px;height:42px;font-size:1.05rem;color:var(--vert);cursor:pointer;display:flex;align-items:center;justify-content:center}
+.qty button:hover{background:var(--creme)}
+.qty input{width:44px;border:none;text-align:center;font-weight:800;font-size:.95rem;color:var(--brun);background:transparent}
+.qty input:focus{outline:none}
+.btn-panier{flex:1;min-width:170px;justify-content:center;background:var(--orange);color:#fff;padding:13px 20px}
+.btn-panier:hover{background:#C96E0F;transform:translateY(-2px)}
+.prod-paiement{margin-top:16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-size:.74rem;color:var(--gris);font-weight:600}
+.prod-paiement .pay{display:inline-flex;align-items:center;gap:5px;background:var(--creme);border:1px solid #E5D9C0;border-radius:8px;padding:4px 10px;color:var(--brun)}
+.pay.wave i{color:#1DC8FF}
+.pay.om i{color:#FF7900}
+.pay.wa i{color:#25D366}
+.prod-badge{margin-top:18px;padding-top:16px;border-top:1px solid #F0E8D6;display:flex;align-items:center;gap:10px}
+.prod-badge img{height:44px;width:44px;object-fit:contain}
+.prod-badge small{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--vert)}
+
+/* ===== EXPORT ===== */
+.export{background:var(--vert-fonce);color:#E8F2E8}
+.export .container{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center}
+.export h2{font-size:clamp(1.7rem,3.2vw,2.4rem);font-weight:900;color:#fff;line-height:1.18;margin-bottom:18px}
+.export h2 em{color:var(--orange-clair);font-style:italic}
+.export p{color:#BFD9C1;font-size:.95rem;margin-bottom:24px}
+.export-liste{display:flex;flex-direction:column;gap:14px}
+.export-liste li{list-style:none;display:flex;gap:12px;align-items:flex-start;font-size:.92rem}
+.export-liste i{color:var(--orange-clair);font-size:1.2rem;margin-top:2px}
+.export-img img{border-radius:22px;border:5px solid rgba(255,255,255,.12)}
+
+/* ===== CONTACT ===== */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.contact-card{background:#fff;border:1px solid #EADFC9;border-radius:var(--radius);padding:34px 30px}
+.contact-card h3{font-size:1.25rem;font-weight:800;color:var(--vert-fonce);margin-bottom:18px;display:flex;align-items:center;gap:10px}
+.contact-card h3 i{color:var(--orange)}
+.contact-ligne{display:flex;gap:12px;align-items:flex-start;margin-bottom:14px;font-size:.92rem;color:var(--gris)}
+.contact-ligne i{color:var(--vert-clair);font-size:1.15rem;margin-top:2px}
+.contact-ligne strong{color:var(--brun)}
+
+/* ===== MAP ===== */
+.map-card{margin-top:26px;background:#fff;border:1px solid #EADFC9;border-radius:var(--radius);overflow:hidden;box-shadow:var(--ombre)}
+.map-card .map-head{padding:18px 24px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.map-card .map-head h3{font-size:1.1rem;font-weight:800;color:var(--vert-fonce);display:flex;align-items:center;gap:9px}
+.map-card .map-head h3 i{color:var(--orange)}
+.btn-itineraire{display:inline-flex;align-items:center;gap:8px;background:var(--vert);color:#fff;font-weight:700;font-size:.84rem;padding:10px 18px;border-radius:999px;transition:background .2s}
+.btn-itineraire:hover{background:var(--vert-fonce)}
+.map-card iframe{width:100%;height:380px;border:0;display:block}
+
+/* ===== FOOTER ===== */
+footer{background:var(--vert-fonce);color:#BFD9C1;padding:48px 0 26px}
+.foot{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:38px;margin-bottom:34px}
+.foot img{height:64px;width:64px;object-fit:contain;margin-bottom:14px}
+.foot h4{color:#fff;font-size:.95rem;margin-bottom:14px;letter-spacing:.06em;text-transform:uppercase}
+.foot a{display:block;font-size:.88rem;margin-bottom:9px;color:#BFD9C1}
+.foot a:hover{color:var(--orange-clair)}
+.foot p{font-size:.86rem}
+.copyright{border-top:1px solid rgba(255,255,255,.12);padding-top:20px;text-align:center;font-size:.78rem}
+
+/* ===== PANIER DRAWER ===== */
+.drawer-overlay{position:fixed;inset:0;background:rgba(20,30,20,.5);z-index:120;opacity:0;pointer-events:none;transition:opacity .3s}
+.drawer-overlay.open{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;right:-420px;width:min(420px,94vw);height:100%;background:#fff;z-index:130;display:flex;flex-direction:column;transition:right .35s cubic-bezier(.2,.8,.3,1);box-shadow:-14px 0 40px rgba(0,0,0,.18)}
+.drawer.open{right:0}
+.drawer-head{padding:20px 24px;border-bottom:1px solid #EFE7D5;display:flex;justify-content:space-between;align-items:center;background:var(--creme)}
+.drawer-head h3{font-size:1.15rem;font-weight:900;color:var(--vert-fonce);display:flex;align-items:center;gap:10px}
+.drawer-head button{background:none;border:none;font-size:1.4rem;color:var(--gris);cursor:pointer}
+.drawer-body{flex:1;overflow-y:auto;padding:18px 24px}
+.panier-vide{text-align:center;padding:60px 10px;color:var(--gris)}
+.panier-vide i{font-size:3rem;color:#D9CDB4;display:block;margin-bottom:14px}
+.ligne-panier{display:flex;gap:13px;align-items:center;padding:13px 0;border-bottom:1px solid #F2ECDD}
+.ligne-panier img{width:62px;height:62px;border-radius:12px;object-fit:cover}
+.ligne-panier .det{flex:1}
+.ligne-panier .det strong{display:block;font-size:.9rem;color:var(--brun)}
+.ligne-panier .det small{color:var(--gris);font-size:.78rem}
+.ligne-panier .sup{background:none;border:none;color:#C0392B;cursor:pointer;font-size:1.1rem}
+.drawer-foot{padding:20px 24px;border-top:1px solid #EFE7D5;background:var(--creme)}
+.drawer-foot .note{font-size:.78rem;color:var(--gris);margin-bottom:14px;display:flex;gap:8px;align-items:flex-start}
+.drawer-foot .note i{color:var(--orange);margin-top:2px}
+.btn-whatsapp{width:100%;justify-content:center;background:#1FAF54;color:#fff;font-size:1rem}
+.btn-whatsapp:hover{background:#178A41}
+.paiement-drawer{display:flex;justify-content:center;gap:10px;margin-top:12px;font-size:.74rem;font-weight:700;color:var(--gris)}
+
+/* ===== TOAST ===== */
+.toast{position:fixed;bottom:26px;left:50%;transform:translate(-50%,80px);background:var(--vert-fonce);color:#fff;padding:13px 24px;border-radius:999px;font-weight:700;font-size:.9rem;z-index:200;display:flex;align-items:center;gap:9px;opacity:0;transition:all .35s;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.toast.show{transform:translate(-50%,0);opacity:1}
+.toast i{color:var(--orange-clair)}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width:1020px){
+  .prod-card{grid-template-columns:1fr 1fr}
+  .prod-infos{grid-column:1/-1}
+  .piliers{grid-template-columns:1fr}
+  .chiffres{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:860px){
+  nav.menu{display:none;position:absolute;top:76px;left:0;right:0;background:#fff;flex-direction:column;gap:0;padding:10px 0;border-bottom:1px solid #E8DFCE;box-shadow:0 16px 30px rgba(0,0,0,.08)}
+  nav.menu.open{display:flex}
+  nav.menu a{padding:13px 24px}
+  .burger{display:block}
+  .hero .container,.export .container,.contact-grid{grid-template-columns:1fr}
+  .hero-figure{order:-1}
+  .foot{grid-template-columns:1fr}
+}
+@media (max-width:620px){
+  .prod-card{grid-template-columns:1fr}
+  .prod-sac{border-left:none;border-right:none;border-top:1px dashed #E0D5BE;border-bottom:1px dashed #E0D5BE;min-height:240px}
+  .chiffres{grid-template-columns:1fr 1fr;padding:28px 18px}
+  section{padding:56px 0}
+}
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="container">
+    <span><i class="ti ti-map-pin"></i> Hann Mariste, Dakar — Sénégal</span>
+    <span><i class="ti ti-truck-delivery"></i> Import / Export — Livraison Dakar et régions</span>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="container nav">
+    <a href="#accueil" class="brand">
+      <img src="images/logo-best-foods.png" alt="Logo Best Foods">
+      <span class="brand-name">BEST FOODS<small>La Qualité au Bon Prix</small></span>
+    </a>
+    <nav class="menu" id="menu">
+      <a href="#accueil">Accueil</a>
+      <a href="#portfolio">Qui sommes-nous</a>
+      <a href="#produits">Nos Produits</a>
+      <a href="#export">Import / Export</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="btn-cart" id="btnPanier" aria-label="Ouvrir le panier">
+        <i class="ti ti-shopping-cart"></i>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="burger" id="burger" aria-label="Menu"><i class="ti ti-menu-2"></i></button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="accueil">
+  <div class="container">
+    <div>
+      <span class="eyebrow"><i class="ti ti-leaf"></i> Épices / Produits Alimentaires</span>
+      <h1>Des épices sélectionnées, <em>la qualité</em> au bon prix.</h1>
+      <p class="lead">Best Foods importe et distribue depuis Dakar des épices et produits alimentaires rigoureusement sélectionnés : tamarin, poivre noir, piment rouge, café, dattes, gingembre et bien plus. Du conteneur au détail, nous servons grossistes, commerçants et particuliers.</p>
+      <div class="hero-cta">
+        <a href="#produits" class="btn btn-vert"><i class="ti ti-basket"></i> Voir nos produits</a>
+        <a href="#contact" class="btn btn-ligne"><i class="ti ti-phone"></i> Nous contacter</a>
+      </div>
+      <div class="hero-points">
+        <span><i class="ti ti-certificate"></i> Qualité contrôlée</span>
+        <span><i class="ti ti-package"></i> Gros / Demi-gros / Détail</span>
+        <span><i class="ti ti-world"></i> Sourcing international</span>
+      </div>
+    </div>
+    <figure class="hero-figure">
+      <img src="images/best-foods-spices.jpg" alt="Gamme de produits Best Foods : poivre, raisins secs, gingembre, café, petits pois, tamarin, laurier, noix de muscade, clous de girofle, piment rouge">
+      <div class="hero-stamp">
+        <img src="images/logo-best-foods.png" alt="Badge Best Foods">
+        <div>
+          <strong>Best Foods</strong>
+          <small>La Qualité au Bon Prix</small>
+        </div>
+      </div>
+    </figure>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track" id="marqueeTrack"></div>
+</div>
+
+<!-- PORTFOLIO -->
+<section class="portfolio" id="portfolio">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow"><i class="ti ti-building-store"></i> Notre portfolio</span>
+      <h2>Une maison de confiance pour les produits alimentaires à Dakar</h2>
+      <p>Basée à Hann Mariste, Best Foods est une entreprise d'import-export spécialisée dans les épices et denrées alimentaires. Notre métier : sourcer les meilleures origines, contrôler la qualité et livrer au bon prix.</p>
+    </div>
+    <div class="piliers">
+      <div class="pilier">
+        <div class="ico"><i class="ti ti-world-download"></i></div>
+        <h3>Import / Sourcing</h3>
+        <p>Nous importons directement depuis les meilleures origines : Inde, Kenya, Madagascar, Brésil. Achat en conteneurs complets pour garantir des prix compétitifs toute l'année.</p>
+      </div>
+      <div class="pilier">
+        <div class="ico"><i class="ti ti-rosette-discount-check"></i></div>
+        <h3>Contrôle Qualité</h3>
+        <p>Chaque arrivage est inspecté : taux d'humidité, calibre, pureté et propreté. Seuls les lots conformes à nos standards portent le badge Best Foods.</p>
+      </div>
+      <div class="pilier">
+        <div class="ico"><i class="ti ti-truck-delivery"></i></div>
+        <h3>Distribution / Export</h3>
+        <p>Vente en gros, demi-gros et détail. Conditionnement en sacs PP avec notre packaging, livraison à Dakar, dans les régions et export sous-régional.</p>
+      </div>
+    </div>
+    <div class="chiffres">
+      <div class="chiffre"><strong>14+</strong><small>Produits au catalogue</small></div>
+      <div class="chiffre"><strong>5</strong><small>Origines d'importation</small></div>
+      <div class="chiffre"><strong>100%</strong><small>Lots contrôlés</small></div>
+      <div class="chiffre"><strong>7j/7</strong><small>Commande WhatsApp</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUITS -->
+<section id="produits">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow"><i class="ti ti-basket"></i> Notre catalogue</span>
+      <h2>Nos Produits</h2>
+      <p>Pour chaque produit : le visuel du produit en vrac, son sac avec le packaging Best Foods, et la commande directe. Tous nos lots portent notre badge de qualité.</p>
+    </div>
+    <div class="prod-grid" id="prodGrid"></div>
+  </div>
+</section>
+
+<!-- EXPORT -->
+<section class="export" id="export">
+  <div class="container">
+    <div>
+      <span class="eyebrow"><i class="ti ti-ship"></i> Logistique</span>
+      <h2>Import / Export : <em>du conteneur</em> à votre boutique</h2>
+      <p>Nous maîtrisons toute la chaîne : négociation à l'origine, transit maritime, dédouanement au Port de Dakar, stockage et reconditionnement en sacs Best Foods.</p>
+      <ul class="export-liste">
+        <li><i class="ti ti-circle-check"></i> Conteneurs 20 et 40 pieds — arrivages réguliers</li>
+        <li><i class="ti ti-circle-check"></i> Conditionnement sur mesure : sacs PP 10 kg, 25 kg, 50 kg</li>
+        <li><i class="ti ti-circle-check"></i> Tarifs dégressifs pour grossistes et revendeurs</li>
+        <li><i class="ti ti-circle-check"></i> Documentation export disponible pour la sous-région</li>
+      </ul>
+    </div>
+    <figure class="export-img">
+      <img src="images/cafe-kenya.jpg" alt="Café en grains verts du Kenya avec le badge Best Foods">
+    </figure>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow"><i class="ti ti-message-circle"></i> Contact</span>
+      <h2>Parlons de votre commande</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3><i class="ti ti-map-pin"></i> Nous trouver</h3>
+        <div class="contact-ligne"><i class="ti ti-building"></i><span><strong>Best Foods</strong><br>Hann Mariste, près de Coris Bank<br>Dakar, Sénégal</span></div>
+        <div class="contact-ligne"><i class="ti ti-clock"></i><span>Lundi – Samedi : 8h00 – 19h00</span></div>
+      </div>
+      <div class="contact-card">
+        <h3><i class="ti ti-phone-call"></i> Commander</h3>
+        <div class="contact-ligne"><i class="ti ti-brand-whatsapp"></i><span><strong>WhatsApp :</strong> +221 77 699 00 00</span></div>
+        <div class="contact-ligne"><i class="ti ti-credit-card"></i><span><strong>Paiement :</strong> Wave, Orange Money, espèces à la livraison</span></div>
+        <div class="contact-ligne"><i class="ti ti-package"></i><span><strong>Gros et détail :</strong> devis rapide sur demande</span></div>
+      </div>
+    </div>
+    <div class="map-card">
+      <div class="map-head">
+        <h3><i class="ti ti-map-pin"></i> Hann Mariste — en face Coris Bank</h3>
+        <a class="btn-itineraire" href="https://www.google.com/maps/dir/?api=1&destination=14.7400027,-17.425109" target="_blank" rel="noopener"><i class="ti ti-route"></i> Itinéraire</a>
+      </div>
+      <iframe src="https://www.google.com/maps?q=14.7400027,-17.425109&z=17&output=embed" title="Localisation Best Foods — Hann Mariste, en face Coris Bank, Dakar" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot">
+      <div>
+        <img src="images/logo-best-foods.png" alt="Logo Best Foods">
+        <p>Best Foods — import-export d'épices et de produits alimentaires à Dakar. La Qualité au Bon Prix, du conteneur au détail.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <a href="#accueil">Accueil</a>
+        <a href="#portfolio">Qui sommes-nous</a>
+        <a href="#produits">Nos Produits</a>
+        <a href="#export">Import / Export</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="https://wa.me/221776990000"><i class="ti ti-brand-whatsapp"></i> +221 77 699 00 00</a>
+        <a href="#contact"><i class="ti ti-map-pin"></i> Hann Mariste, Dakar</a>
+      </div>
+    </div>
+    <div class="copyright">© 2026 Best Foods — La Qualité au Bon Prix. Tous droits réservés.</div>
+  </div>
+</footer>
+
+<!-- PANIER -->
+<div class="drawer-overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" aria-label="Panier">
+  <div class="drawer-head">
+    <h3><i class="ti ti-shopping-cart"></i> Mon Panier</h3>
+    <button id="fermerDrawer" aria-label="Fermer"><i class="ti ti-x"></i></button>
+  </div>
+  <div class="drawer-body" id="drawerBody"></div>
+  <div class="drawer-foot">
+    <div class="note"><i class="ti ti-info-circle"></i> Les prix sont confirmés sur WhatsApp selon la quantité (gros / détail). Paiement Wave, Orange Money ou à la livraison.</div>
+    <button class="btn btn-whatsapp" id="btnCommander"><i class="ti ti-brand-whatsapp"></i> Commander sur WhatsApp</button>
+    <div class="paiement-drawer">
+      <span class="pay wave"><i class="ti ti-wave-sine"></i> Wave</span>
+      <span class="pay om"><i class="ti ti-device-mobile"></i> Orange Money</span>
+      <span class="pay wa"><i class="ti ti-cash"></i> À la livraison</span>
+    </div>
+  </div>
+</aside>
+
+<div class="toast" id="toast"><i class="ti ti-circle-check"></i><span id="toastMsg"></span></div>
+
+<script>
+/* ============================================================
+   CONFIGURATION — à modifier facilement
+   ============================================================ */
+var WHATSAPP_NUMBER = "221776990000"; // numero WhatsApp Best Foods
+
+/* Catalogue produits.
+   - image : visuel du produit en vrac (dossier images/)
+   - sac   : photo du sac avec packaging Best Foods (dossier images/sacs/)
+             si le fichier n'existe pas encore, un emplacement avec le logo s'affiche automatiquement
+   - prix  : null = "Prix sur demande" (gros/détail confirmés sur WhatsApp) */
+var PRODUCTS = [
+  { id:"tamarin",          nom:"Tamarin",             origine:"Inde",            image:"images/tamarin.jpg",            sac:"images/sacs/tamarin-sac.jpg",          desc:"Gousses de tamarin entières, riches en pulpe, idéales pour jus, sauces et confiseries.", unite:"carton de 10 kg", prix:null, tag:"Best-seller" },
+  { id:"poivre-noir",      nom:"Poivre Noir",         origine:"Brésil",      image:"images/poivre-noir.jpg",        sac:"images/sacs/poivre-noir-sac.jpg",      desc:"Poivre noir en grains, arôme puissant et piquant équilibré, calibre régulier.", unite:"sac de 25 kg", prix:null, tag:"Best-seller" },
+  { id:"piment-rouge",     nom:"Piment Rouge",        origine:"Inde",            image:"images/piment-rouge.jpg",       sac:"images/sacs/piment-rouge-sac.jpg",     desc:"Piment rouge séché entier, couleur intense et force constante, séchage contrôlé.", unite:"sac de 10 kg", prix:null, tag:"Fort" },
+  { id:"gingembre",        nom:"Gingembre Frais",     origine:"Import direct",   image:"images/gingembre.jpg",          sac:"images/sacs/gingembre-sac.jpg",        desc:"Rhizomes de gingembre frais, charnus et parfumés, parfaits pour jus et cuisine.", unite:"carton / sac", prix:null, tag:"Frais" },
+  { id:"cafe-kenya",       nom:"Café Grains Verts",   origine:"Kenya",           image:"images/cafe-kenya.jpg",         sac:"images/sacs/cafe-kenya-sac.jpg",       desc:"Café en grains verts du Kenya, qualité export, prêt pour torréfaction artisanale.", unite:"sac jute de 50 kg", prix:null, tag:"Premium" },
+  { id:"dattes",           nom:"Dattes",              origine:"Afrique du Nord", image:"images/dattes.jpg",             sac:"images/sacs/dattes-sac.jpg",           desc:"Dattes naturelles sucrées et moelleuses, triées à la main, idéales Ramadan et détail.", unite:"carton de 10 kg", prix:null, tag:"Saison" },
+  { id:"lait-poudre",      nom:"Lait en Poudre Yoghurt King", origine:"Irlande", image:"images/lait-yoghurt-king.jpg", sac:"images/lait-yoghurt-king.jpg", desc:"Poudre instantanée enrichie en matières grasses (Instant Fat Filled Powder), produite en Irlande. Idéale pour yaourt, lait caillé et pâtisserie.", unite:"sac de 25 kg", prix:null, tag:"Nouveau" },
+  { id:"raisins-secs",     nom:"Raisins Secs Blonds", origine:"Import direct",   image:"images/raisins-secs.jpg",       sac:"images/sacs/raisins-secs-sac.jpg",     desc:"Raisins secs blonds dorés, sucrés et charnus, pour pâtisserie, thiéré et vente au détail.", unite:"carton de 10 kg", prix:null, tag:"Sucré" },
+  { id:"noix-de-muscade",  nom:"Noix de Muscade",     origine:"Indonésie",       image:"images/noix-de-muscade.jpg",    sac:"images/sacs/noix-de-muscade-sac.jpg",  desc:"Noix de muscade entières, calibre uniforme, arôme chaud et boisé.", unite:"carton de 10 kg", prix:null, tag:"Épice fine" },
+  { id:"clous-de-girofle", nom:"Clous de Girofle",    origine:"Indonésie",      image:"images/clous-de-girofle.jpg",   sac:"images/sacs/clous-de-girofle-sac.jpg", desc:"Clous de girofle entiers à forte teneur en huile, parfum intense, qualité export.", unite:"carton de 10 kg", prix:null, tag:"Épice fine" },
+  { id:"feuilles-laurier", nom:"Feuilles de Laurier", origine:"Import direct",   image:"images/feuilles-de-laurier.jpg",sac:"images/sacs/feuilles-laurier-sac.jpg", desc:"Feuilles de laurier séchées entières, couleur verte préservée, arôme délicat.", unite:"sac de 5 kg", prix:null, tag:"Aromate" },
+  { id:"curcuma",          nom:"Curcuma",             origine:"Inde",            image:"images/curcuma.jpg",            sac:"images/sacs/curcuma-sac.jpg",          desc:"Curcuma de qualité supérieure, couleur dorée intense, pour cuisine et bien-être.", unite:"sac de 25 kg", prix:null, tag:"Épice fine" },
+  { id:"petits-pois",      nom:"Petits Pois Secs",    origine:"Import direct",   image:"images/petits-pois.jpg",        sac:"images/sacs/petits-pois-sac.jpg",      desc:"Petits pois secs verts, calibre homogène, cuisson rapide, parfaits pour le détail.", unite:"sac de 25 kg", prix:null, tag:"Légumineuse" },
+  { id:"lentilles",        nom:"Lentilles",           origine:"Import direct",   image:"images/lentilles.jpg",          sac:"images/sacs/lentilles-sac.jpg",        desc:"Lentilles brunes triées et nettoyées, sans impuretés, riches en protéines.", unite:"sac de 25 kg", prix:null, tag:"Légumineuse" },
+  { id:"sucre",            nom:"Sucre",               origine:"Brésil",          image:"images/sucre-placeholder.svg",  sac:"images/sacs/sucre-sac.jpg",            desc:"Sucre cristallisé blanc, qualité standard import, disponible en gros volumes.", unite:"sac de 50 kg", prix:null, tag:"Gros volume" }
+];
+
+/* ============================================================
+   MARQUEE
+   ============================================================ */
+(function(){
+  var t = document.getElementById('marqueeTrack');
+  var items = PRODUCTS.map(function(p){ return '<span><i class="ti ti-leaf"></i>' + p.nom + '</span>'; }).join('');
+  t.innerHTML = items + items; // doublé pour la boucle infinie
+})();
+
+/* ============================================================
+   RENDU DES CARTES PRODUITS
+   ============================================================ */
+function renderProducts(){
+  var grid = document.getElementById('prodGrid');
+  grid.innerHTML = PRODUCTS.map(function(p){
+    return '' +
+    '<article class="prod-card" id="card-' + p.id + '">' +
+      '<div class="prod-visuel">' +
+        '<span class="prod-tag"><i class="ti ti-eye"></i> Produit visible</span>' +
+        '<img src="' + p.image + '" alt="' + p.nom + ' en vrac — Best Foods" loading="lazy">' +
+      '</div>' +
+      '<div class="prod-sac">' +
+        '<span class="prod-tag orange" style="position:absolute;top:14px;left:14px;z-index:2"><i class="ti ti-package"></i> Notre packaging</span>' +
+        '<img src="' + p.sac + '" alt="Sac ' + p.nom + ' avec packaging Best Foods" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">' +
+        '<div class="sac-placeholder" style="display:none">' +
+          '<img src="images/logo-watermark-green.png" alt="">' +
+          '<p>Photo du sac ' + p.nom + ' avec packaging Best Foods — bientôt disponible</p>' +
+        '</div>' +
+      '</div>' +
+      '<div class="prod-infos">' +
+        '<h3>' + p.nom + '</h3>' +
+        '<span class="prod-origine"><i class="ti ti-world"></i> Origine : ' + p.origine + '</span>' +
+        '<p class="prod-desc">' + p.desc + '</p>' +
+        '<div class="prod-conditionnement">' +
+          '<span><i class="ti ti-package"></i> ' + p.unite + '</span>' +
+          '<span><i class="ti ti-scale"></i> Gros / Détail</span>' +
+        '</div>' +
+        '<div class="prod-prix"><i class="ti ti-tag"></i> ' + (p.prix ? p.prix.toLocaleString('fr-FR') + ' FCFA' : 'Prix sur demande') + '</div>' +
+        '<div class="prod-achat">' +
+          '<span class="qty">' +
+            '<button type="button" onclick="changeQty(\'' + p.id + '\',-1)" aria-label="Diminuer"><i class="ti ti-minus"></i></button>' +
+            '<input type="number" id="qty-' + p.id + '" value="1" min="1" max="999" aria-label="Quantité">' +
+            '<button type="button" onclick="changeQty(\'' + p.id + '\',1)" aria-label="Augmenter"><i class="ti ti-plus"></i></button>' +
+          '</span>' +
+          '<button type="button" class="btn btn-panier" onclick="addToCart(\'' + p.id + '\')"><i class="ti ti-shopping-cart-plus"></i> Ajouter au panier</button>' +
+        '</div>' +
+        '<div class="prod-paiement">' +
+          'Paiement :' +
+          '<span class="pay wave"><i class="ti ti-wave-sine"></i> Wave</span>' +
+          '<span class="pay om"><i class="ti ti-device-mobile"></i> Orange Money</span>' +
+          '<span class="pay wa"><i class="ti ti-brand-whatsapp"></i> WhatsApp</span>' +
+        '</div>' +
+        '<div class="prod-badge">' +
+          '<img src="images/logo-best-foods.png" alt="Badge qualité Best Foods">' +
+          '<small>Qualité certifiée Best Foods</small>' +
+        '</div>' +
+      '</div>' +
+    '</article>';
+  }).join('');
+}
+renderProducts();
+
+/* ============================================================
+   PANIER (localStorage : bestfoods_cart)
+   ============================================================ */
+var CART_KEY = 'bestfoods_cart';
+function getCart(){ try{ return JSON.parse(localStorage.getItem(CART_KEY)) || []; }catch(e){ return []; } }
+function saveCart(c){ localStorage.setItem(CART_KEY, JSON.stringify(c)); updateCartUI(); }
+
+function changeQty(id, delta){
+  var input = document.getElementById('qty-' + id);
+  var v = parseInt(input.value || '1', 10) + delta;
+  input.value = Math.max(1, Math.min(999, v));
+}
+
+function addToCart(id){
+  var p = PRODUCTS.find(function(x){ return x.id === id; });
+  var qty = parseInt(document.getElementById('qty-' + id).value || '1', 10);
+  var cart = getCart();
+  var existing = cart.find(function(x){ return x.id === id; });
+  if (existing){ existing.qty += qty; } else { cart.push({ id:id, qty:qty }); }
+  saveCart(cart);
+  showToast(p.nom + ' ajouté au panier (' + qty + ' × ' + p.unite + ')');
+}
+
+function removeFromCart(id){
+  saveCart(getCart().filter(function(x){ return x.id !== id; }));
+}
+
+function updateCartUI(){
+  var cart = getCart();
+  var total = cart.reduce(function(s,x){ return s + x.qty; }, 0);
+  document.getElementById('cartCount').textContent = total;
+  var body = document.getElementById('drawerBody');
+  if (!cart.length){
+    body.innerHTML = '<div class="panier-vide"><i class="ti ti-shopping-cart-off"></i>Votre panier est vide.<br>Ajoutez des produits depuis le catalogue.</div>';
+    return;
+  }
+  body.innerHTML = cart.map(function(item){
+    var p = PRODUCTS.find(function(x){ return x.id === item.id; });
+    return '<div class="ligne-panier">' +
+      '<img src="' + p.image + '" alt="' + p.nom + '">' +
+      '<div class="det"><strong>' + p.nom + '</strong><small>' + item.qty + ' × ' + p.unite + ' — Origine : ' + p.origine + '</small></div>' +
+      '<button class="sup" onclick="removeFromCart(\'' + p.id + '\')" aria-label="Retirer ' + p.nom + '"><i class="ti ti-trash"></i></button>' +
+    '</div>';
+  }).join('');
+}
+
+function commanderWhatsApp(){
+  var cart = getCart();
+  if (!cart.length){ showToast('Votre panier est vide'); return; }
+  var lignes = cart.map(function(item){
+    var p = PRODUCTS.find(function(x){ return x.id === item.id; });
+    return '- ' + p.nom + ' : ' + item.qty + ' x ' + p.unite;
+  }).join('\n');
+  var msg = 'Bonjour Best Foods,\n\nJe souhaite commander :\n' + lignes + '\n\nMerci de me confirmer les prix et la disponibilite.\nPaiement souhaite : Wave / Orange Money / a la livraison.';
+  window.open('https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(msg), '_blank');
+}
+
+/* ============================================================
+   UI : drawer, toast, burger
+   ============================================================ */
+var drawer = document.getElementById('drawer');
+var overlay = document.getElementById('overlay');
+function openDrawer(){ drawer.classList.add('open'); overlay.classList.add('open'); }
+function closeDrawer(){ drawer.classList.remove('open'); overlay.classList.remove('open'); }
+document.getElementById('btnPanier').addEventListener('click', openDrawer);
+document.getElementById('fermerDrawer').addEventListener('click', closeDrawer);
+overlay.addEventListener('click', closeDrawer);
+document.getElementById('btnCommander').addEventListener('click', commanderWhatsApp);
+
+var toastTimer;
+function showToast(msg){
+  var t = document.getElementById('toast');
+  document.getElementById('toastMsg').textContent = msg;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(function(){ t.classList.remove('show'); }, 2600);
+}
+
+document.getElementById('burger').addEventListener('click', function(){
+  document.getElementById('menu').classList.toggle('open');
+});
+document.querySelectorAll('#menu a').forEach(function(a){
+  a.addEventListener('click', function(){ document.getElementById('menu').classList.remove('open'); });
+});
+
+updateCartUI();
+</script>
+</body>
+</html>
