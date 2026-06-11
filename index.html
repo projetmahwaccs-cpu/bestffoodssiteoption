@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Best Foods — La Qualité au Bon Prix | Épices et Produits Alimentaires, Dakar</title>
 <meta name="description" content="Best Foods, import-export d'épices et produits alimentaires à Dakar : tamarin, poivre noir, piment rouge, café, dattes, gingembre. La Qualité au Bon Prix.">
-<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
-<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -117,7 +117,7 @@ nav.menu a:hover::after{width:100%}
 
 /* ===== PRODUITS ===== */
 #produits{position:relative;background:var(--creme)}
-#produits::before{content:"";position:absolute;inset:0;background:url('images/fond-produits.jpg') center/520px repeat;opacity:.10;pointer-events:none}
+#produits::before{content:"";position:absolute;inset:0;background:url('fond-produits.jpg') center/520px repeat;opacity:.10;pointer-events:none}
 #produits .container{position:relative;z-index:1}
 .prod-grid{display:flex;flex-direction:column;gap:30px}
 .prod-card{background:#fff;border:1px solid #EADFC9;border-radius:24px;overflow:hidden;display:grid;grid-template-columns:1fr 1fr 1.15fr;box-shadow:0 4px 18px rgba(62,42,24,.05);transition:box-shadow .25s}
@@ -265,7 +265,7 @@ footer .container{position:relative;z-index:2}
 <header>
   <div class="container nav">
     <a href="#accueil" class="brand">
-      <img src="images/logo-best-foods.png" alt="Logo Best Foods">
+      <img src="logo-best-foods.png" alt="Logo Best Foods">
       <span class="brand-name">BEST FOODS<small>La Qualité au Bon Prix</small></span>
     </a>
     <nav class="menu" id="menu">
@@ -306,9 +306,9 @@ footer .container{position:relative;z-index:2}
       </div>
     </div>
     <figure class="hero-figure">
-      <img src="images/best-foods-spices.jpg" alt="Gamme de produits Best Foods : poivre, raisins secs, gingembre, café, petits pois, tamarin, laurier, noix de muscade, clous de girofle, piment rouge">
+      <img src="best-foods-spices.jpg" alt="Gamme de produits Best Foods : poivre, raisins secs, gingembre, café, petits pois, tamarin, laurier, noix de muscade, clous de girofle, piment rouge">
       <div class="hero-stamp">
-        <img src="images/logo-badge.png" alt="Badge Best Foods">
+        <img src="logo-badge.png" alt="Badge Best Foods">
         <div>
           <strong>Best Foods</strong>
           <small>La Qualité au Bon Prix</small>
@@ -384,7 +384,7 @@ footer .container{position:relative;z-index:2}
       </ul>
     </div>
     <figure class="export-img">
-      <img src="images/cafe-kenya.jpg" alt="Café en grains verts du Kenya avec le badge Best Foods">
+      <img src="cafe-kenya.jpg" alt="Café en grains verts du Kenya avec le badge Best Foods">
     </figure>
   </div>
 </section>
@@ -427,7 +427,7 @@ footer .container{position:relative;z-index:2}
   <div class="container">
     <div class="foot">
       <div>
-        <img src="images/logo-best-foods.png" alt="Logo Best Foods">
+        <img src="logo-best-foods.png" alt="Logo Best Foods">
         <p>Best Foods — import-export d'épices et de produits alimentaires à Dakar. La Qualité au Bon Prix, du conteneur au détail.</p>
       </div>
       <div>
@@ -475,26 +475,26 @@ footer .container{position:relative;z-index:2}
 var WHATSAPP_NUMBER = "221776990000"; // numero WhatsApp Best Foods
 
 /* Catalogue produits.
-   - image : visuel du produit en vrac (dossier images/)
-   - sac   : photo du sac avec packaging Best Foods (dossier images/sacs/)
+   - image : visuel du produit en vrac (dossier )
+   - sac   : photo du sac avec packaging Best Foods (dossier sacs/)
              si le fichier n'existe pas encore, un emplacement avec le logo s'affiche automatiquement
    - prix  : null = "Prix sur demande" (gros/détail confirmés sur WhatsApp) */
 var PRODUCTS = [
-  { id:"tamarin",          nom:"Tamarin",             origine:"Inde",            image:"images/tamarin.jpg",            sac:"images/sacs/tamarin-sac.jpg",          desc:"Gousses de tamarin entières, riches en pulpe, idéales pour jus, sauces et confiseries.", unite:"carton de 10 kg", prix:null, tag:"Best-seller" },
-  { id:"poivre-noir",      nom:"Poivre Noir",         origine:"Brésil",      image:"images/poivre-noir.jpg",        sac:"images/sacs/poivre-noir-sac.jpg",      desc:"Poivre noir en grains, arôme puissant et piquant équilibré, calibre régulier.", unite:"sac de 25 kg", prix:null, tag:"Best-seller" },
-  { id:"piment-rouge",     nom:"Piment Rouge",        origine:"Inde",            image:"images/piment-rouge.jpg",       sac:"images/sacs/piment-rouge-sac.jpg",     desc:"Piment rouge séché entier, couleur intense et force constante, séchage contrôlé.", unite:"sac de 25 kg", prix:null, tag:"Fort" },
-  { id:"gingembre",        nom:"Gingembre Frais",     origine:"Import direct",   image:"images/gingembre.jpg",          sac:"images/sacs/gingembre-sac.jpg",        desc:"Rhizomes de gingembre frais, charnus et parfumés, parfaits pour jus et cuisine.", unite:"carton / sac", prix:null, tag:"Frais" },
-  { id:"cafe-kenya",       nom:"Café Grains Verts",   origine:"Kenya",           image:"images/cafe-kenya.jpg",         sac:"images/sacs/cafe-kenya-sac.jpg",       desc:"Café en grains verts du Kenya, qualité export, prêt pour torréfaction artisanale.", unite:"sac jute de 50 kg", prix:null, tag:"Premium" },
-  { id:"dattes",           nom:"Dattes",              origine:"Afrique du Nord", image:"images/dattes.jpg",             sac:"images/sacs/dattes-sac.jpg",           desc:"Dattes naturelles sucrées et moelleuses, triées à la main, idéales Ramadan et détail.", unite:"carton de 10 kg", prix:null, tag:"Saison" },
-  { id:"lait-poudre",      nom:"Lait en Poudre Yoghurt King", origine:"Irlande", image:"images/lait-yoghurt-king.jpg", sac:"images/lait-yoghurt-king.jpg", desc:"Poudre instantanée enrichie en matières grasses (Instant Fat Filled Powder), produite en Irlande. Idéale pour yaourt, lait caillé et pâtisserie.", unite:"sac de 25 kg", prix:null, tag:"Nouveau" },
-  { id:"raisins-secs",     nom:"Raisins Secs Blonds", origine:"Import direct",   image:"images/raisins-secs.jpg",       sac:"images/sacs/raisins-secs-sac.jpg",     desc:"Raisins secs blonds dorés, sucrés et charnus, pour pâtisserie, thiéré et vente au détail.", unite:"carton de 10 kg", prix:null, tag:"Sucré" },
-  { id:"noix-de-muscade",  nom:"Noix de Muscade",     origine:"Indonésie",       image:"images/noix-de-muscade.jpg",    sac:"images/sacs/noix-de-muscade-sac.jpg",  desc:"Noix de muscade entières, calibre uniforme, arôme chaud et boisé.", unite:"carton de 10 kg", prix:null, tag:"Épice fine" },
-  { id:"clous-de-girofle", nom:"Clous de Girofle",    origine:"Indonésie",      image:"images/clous-de-girofle.jpg",   sac:"images/sacs/clous-de-girofle-sac.jpg", desc:"Clous de girofle entiers à forte teneur en huile, parfum intense, qualité export.", unite:"carton de 10 kg", prix:null, tag:"Épice fine" },
-  { id:"feuilles-laurier", nom:"Feuilles de Laurier", origine:"Import direct",   image:"images/feuilles-de-laurier.jpg",sac:"images/sacs/feuilles-laurier-sac.jpg", desc:"Feuilles de laurier séchées entières, couleur verte préservée, arôme délicat.", unite:"sac de 5 kg", prix:null, tag:"Aromate" },
-  { id:"curcuma",          nom:"Curcuma",             origine:"Inde",            image:"images/curcuma.jpg",            sac:"images/sacs/curcuma-sac.jpg",          desc:"Curcuma de qualité supérieure, couleur dorée intense, pour cuisine et bien-être.", unite:"sac de 25 kg", prix:null, tag:"Épice fine" },
-  { id:"petits-pois",      nom:"Petits Pois Secs",    origine:"Import direct",   image:"images/petits-pois.jpg",        sac:"images/sacs/petits-pois-sac.jpg",      desc:"Petits pois secs verts, calibre homogène, cuisson rapide, parfaits pour le détail.", unite:"sac de 25 kg", prix:null, tag:"Légumineuse" },
-  { id:"lentilles",        nom:"Lentilles",           origine:"Import direct",   image:"images/lentilles.jpg",          sac:"images/sacs/lentilles-sac.jpg",        desc:"Lentilles brunes triées et nettoyées, sans impuretés, riches en protéines.", unite:"sac de 25 kg", prix:null, tag:"Légumineuse" },
-  { id:"sucre",            nom:"Sucre",               origine:"Brésil",          image:"images/sucre-placeholder.svg",  sac:"images/sacs/sucre-sac.jpg",            desc:"Sucre cristallisé blanc, qualité standard import, disponible en gros volumes.", unite:"sac de 50 kg", prix:null, tag:"Gros volume" }
+  { id:"tamarin",          nom:"Tamarin",             origine:"Inde",            image:"tamarin.jpg",            sac:"sacs/tamarin-sac.jpg",          desc:"Gousses de tamarin entières, riches en pulpe, idéales pour jus, sauces et confiseries.", unite:"carton de 10 kg", prix:null, tag:"Best-seller" },
+  { id:"poivre-noir",      nom:"Poivre Noir",         origine:"Brésil",      image:"poivre-noir.jpg",        sac:"sacs/poivre-noir-sac.jpg",      desc:"Poivre noir en grains, arôme puissant et piquant équilibré, calibre régulier.", unite:"sac de 25 kg", prix:null, tag:"Best-seller" },
+  { id:"piment-rouge",     nom:"Piment Rouge",        origine:"Inde",            image:"piment-rouge.jpg",       sac:"sacs/piment-rouge-sac.jpg",     desc:"Piment rouge séché entier, couleur intense et force constante, séchage contrôlé.", unite:"sac de 25 kg", prix:null, tag:"Fort" },
+  { id:"gingembre",        nom:"Gingembre Frais",     origine:"Import direct",   image:"gingembre.jpg",          sac:"sacs/gingembre-sac.jpg",        desc:"Rhizomes de gingembre frais, charnus et parfumés, parfaits pour jus et cuisine.", unite:"carton / sac", prix:null, tag:"Frais" },
+  { id:"cafe-kenya",       nom:"Café Grains Verts",   origine:"Kenya",           image:"cafe-kenya.jpg",         sac:"sacs/cafe-kenya-sac.jpg",       desc:"Café en grains verts du Kenya, qualité export, prêt pour torréfaction artisanale.", unite:"sac jute de 50 kg", prix:null, tag:"Premium" },
+  { id:"dattes",           nom:"Dattes",              origine:"Afrique du Nord", image:"dattes.jpg",             sac:"sacs/dattes-sac.jpg",           desc:"Dattes naturelles sucrées et moelleuses, triées à la main, idéales Ramadan et détail.", unite:"carton de 10 kg", prix:null, tag:"Saison" },
+  { id:"lait-poudre",      nom:"Lait en Poudre Yoghurt King", origine:"Irlande", image:"lait-yoghurt-king.jpg", sac:"lait-yoghurt-king.jpg", desc:"Poudre instantanée enrichie en matières grasses (Instant Fat Filled Powder), produite en Irlande. Idéale pour yaourt, lait caillé et pâtisserie.", unite:"sac de 25 kg", prix:null, tag:"Nouveau" },
+  { id:"raisins-secs",     nom:"Raisins Secs Blonds", origine:"Import direct",   image:"raisins-secs.jpg",       sac:"sacs/raisins-secs-sac.jpg",     desc:"Raisins secs blonds dorés, sucrés et charnus, pour pâtisserie, thiéré et vente au détail.", unite:"carton de 10 kg", prix:null, tag:"Sucré" },
+  { id:"noix-de-muscade",  nom:"Noix de Muscade",     origine:"Indonésie",       image:"noix-de-muscade.jpg",    sac:"sacs/noix-de-muscade-sac.jpg",  desc:"Noix de muscade entières, calibre uniforme, arôme chaud et boisé.", unite:"carton de 10 kg", prix:null, tag:"Épice fine" },
+  { id:"clous-de-girofle", nom:"Clous de Girofle",    origine:"Indonésie",      image:"clous-de-girofle.jpg",   sac:"sacs/clous-de-girofle-sac.jpg", desc:"Clous de girofle entiers à forte teneur en huile, parfum intense, qualité export.", unite:"carton de 10 kg", prix:null, tag:"Épice fine" },
+  { id:"feuilles-laurier", nom:"Feuilles de Laurier", origine:"Import direct",   image:"feuilles-de-laurier.jpg",sac:"sacs/feuilles-laurier-sac.jpg", desc:"Feuilles de laurier séchées entières, couleur verte préservée, arôme délicat.", unite:"sac de 5 kg", prix:null, tag:"Aromate" },
+  { id:"curcuma",          nom:"Curcuma",             origine:"Inde",            image:"curcuma.jpg",            sac:"sacs/curcuma-sac.jpg",          desc:"Curcuma de qualité supérieure, couleur dorée intense, pour cuisine et bien-être.", unite:"sac de 25 kg", prix:null, tag:"Épice fine" },
+  { id:"petits-pois",      nom:"Petits Pois Secs",    origine:"Import direct",   image:"petits-pois.jpg",        sac:"sacs/petits-pois-sac.jpg",      desc:"Petits pois secs verts, calibre homogène, cuisson rapide, parfaits pour le détail.", unite:"sac de 25 kg", prix:null, tag:"Légumineuse" },
+  { id:"lentilles",        nom:"Lentilles",           origine:"Import direct",   image:"lentilles.jpg",          sac:"sacs/lentilles-sac.jpg",        desc:"Lentilles brunes triées et nettoyées, sans impuretés, riches en protéines.", unite:"sac de 25 kg", prix:null, tag:"Légumineuse" },
+  { id:"sucre",            nom:"Sucre",               origine:"Brésil",          image:"sucre-placeholder.svg",  sac:"sacs/sucre-sac.jpg",            desc:"Sucre cristallisé blanc, qualité standard import, disponible en gros volumes.", unite:"sac de 50 kg", prix:null, tag:"Gros volume" }
 ];
 
 /* ============================================================
@@ -522,7 +522,7 @@ function renderProducts(){
         '<span class="prod-tag orange" style="position:absolute;top:14px;left:14px;z-index:2"><i class="ti ti-package"></i> Notre packaging</span>' +
         '<img src="' + p.sac + '" alt="Sac ' + p.nom + ' avec packaging Best Foods" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">' +
         '<div class="sac-placeholder" style="display:none">' +
-          '<img src="images/logo-watermark-green.png" alt="">' +
+          '<img src="logo-watermark-green.png" alt="">' +
           '<p>Photo du sac ' + p.nom + ' avec packaging Best Foods — bientôt disponible</p>' +
         '</div>' +
       '</div>' +
@@ -550,7 +550,7 @@ function renderProducts(){
           '<span class="pay wa"><i class="ti ti-brand-whatsapp"></i> WhatsApp</span>' +
         '</div>' +
         '<div class="prod-badge">' +
-          '<img src="images/logo-badge.png" alt="Badge qualité Best Foods">' +
+          '<img src="logo-badge.png" alt="Badge qualité Best Foods">' +
           '<small>Qualité certifiée Best Foods</small>' +
         '</div>' +
       '</div>' +
